@@ -1,0 +1,58 @@
+import React from "react";
+import PlatformWebSection from "../components/PlatformWebSection";
+import WhyTradePlatformSection from "../components/WhyTradePlatformSection";
+import MetatraderBenefitsCard from "../components/MetatraderBenefitsCard";
+import MetaTraderTabs from "../components/MetaTraderTabs";
+import { assets } from "../assets/assets"; // ✅ FIX
+import { Monitor, Timer, User } from "lucide-react";
+
+const MetatraderAndroid = () => {
+  return (
+    <div className="py-24">
+      <MetaTraderTabs />
+
+      <PlatformWebSection
+        image={assets.kitefx17}
+        imageAlt="MetaTrader Android"
+        title={<>Trade Forex on the go with your Android device!</>}
+        description="We offer both MetaTrader 4 and MetaTrader 5 as an application on Android-based devices. These applications give traders easy access to their accounts wherever they are."
+        descriptionSecondary="The IC Markets Global MetaTrader Android application gives you access to our tight spreads and fast execution speeds directly on your Android-based mobile. It features fast one click trading from multiple screens and customisable layouts. With full access to historical data and advanced charting facilities, you can manage your account, trade our full list of products, and use over 30 technical indicators for market analysis."
+        ctaText="Use MetaTrader for Android"
+        systemRequirements="Android 4.0 or higher"
+        features={[
+          { label: "Raw Pricing", icon: "0.0" },
+          { label: "Spreads from 0.0 pips", icon: "0.0" },
+          { label: "Fast order execution", icon: <Timer size={28} /> },
+          { label: "Deep liquidity", icon: "0.0" },
+          { label: "Access your account anywhere", icon: <User size={28} /> },
+          { label: "MetaTrader 4 and 5", icon: <Monitor size={28} /> },
+        ]}
+        onCtaClick={() => console.log("Use MetaTrader Android")}
+      />
+
+      <WhyTradePlatformSection
+        title="Why trade on MetaTrader Android with IC Markets Global?"
+        description=""
+        browsers={[]}
+        leftFeatures={[
+          "Real-time forex and CFD quotes",
+          "Full set of trade orders, including pending orders",
+          "Trade directly from the chart",
+          "Support of all types of execution modes",
+          "View your complete trading history",
+        ]}
+        rightFeatures={[
+          "Real-time interactive charts with zoom and scroll",
+          "30+ of the most popular technical indicators",
+          "Multiple timeframes to analyze price action and patterns",
+          "3 chart types: Bars, Japanese Candlesticks, Line",
+          "Adjustable settings of technical indicators",
+        ]}
+      />
+
+      <MetatraderBenefitsCard />
+    </div>
+  );
+};
+
+export default MetatraderAndroid;
