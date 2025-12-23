@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="115" height="115" viewBox="0 0 115 115">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_854" data-name="Rectangle 854" width="50.5" height="56.479" transform="translate(0 0)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-Behavioural_Insights">
+      <rect width="115" height="115"/>
+    </clipPath>
+  </defs>
+  <g id="Behavioural_Insights" data-name="Behavioural Insights" clip-path="url(#clip-Behavioural_Insights)">
+    <g id="Group_2497" data-name="Group 2497" transform="translate(-490 -3067)">
+      <circle id="Ellipse_29" data-name="Ellipse 29" cx="55" cy="55" r="55" transform="translate(493 3070)" fill="rgba(65,184,234,0.1)"/>
+      <g id="Group_2396" data-name="Group 2396" transform="translate(523 3097)">
+        <g id="Group_2396-2" data-name="Group 2396" clip-path="url(#clip-path)">
+          <path id="Path_1841" data-name="Path 1841" d="M28.307,9.829a3.057,3.057,0,1,1-3.056-3.057A3.056,3.056,0,0,1,28.307,9.829Z" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <path id="Path_1842" data-name="Path 1842" d="M29.357,43.729V31.177h3.579V21.053A5.039,5.039,0,0,0,27.9,16.015H22.6a5.039,5.039,0,0,0-5.038,5.038V31.177h3.579V43.729" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <line id="Line_108" data-name="Line 108" y1="12.552" transform="translate(25.251 31.177)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <line id="Line_109" data-name="Line 109" y1="2.352" transform="translate(25.251 24.683)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <line id="Line_110" data-name="Line 110" y1="2.352" transform="translate(25.251 20.468)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <path id="Path_1843" data-name="Path 1843" d="M41.04,43.984a24.479,24.479,0,0,1-7.87,4.458" fill="none" stroke="#00bdff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1844" data-name="Path 1844" d="M43.985,9.461a24.5,24.5,0,0,1,0,31.58" fill="none" stroke="#00bdff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1845" data-name="Path 1845" d="M9.46,6.517a24.5,24.5,0,0,1,31.581,0" fill="none" stroke="#00bdff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1846" data-name="Path 1846" d="M6.515,41.04q-.148-.177-.294-.355A24.506,24.506,0,0,1,6.516,9.46" fill="none" stroke="#00bdff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1847" data-name="Path 1847" d="M17.33,48.442a24.457,24.457,0,0,1-7.871-4.459" fill="none" stroke="#00bdff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1848" data-name="Path 1848" d="M35.459,55.729H15.041l2.23-7.115H33.23Z" fill="none" stroke="#00bdff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+          <line id="Line_111" data-name="Line 111" x2="18.189" transform="translate(16.156 52.171)" fill="none" stroke="#00bdff" stroke-miterlimit="10" stroke-width="1.5"/>
+          <path id="Path_1849" data-name="Path 1849" d="M15.834,12.891,6.813,3.871,9.236,1.448H1.449V9.235L3.87,6.814l9.02,9.02" fill="none" stroke="#00bdff" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1850" data-name="Path 1850" d="M13.231,34.324,3.868,43.687,1.447,41.266v7.785H9.234L6.813,46.63l9.361-9.363" fill="none" stroke="#00bdff" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1851" data-name="Path 1851" d="M34.3,37.242l9.388,9.39-2.421,2.421h7.785V41.267L46.63,43.688,37.242,34.3" fill="none" stroke="#00bdff" stroke-linejoin="round" stroke-width="1.5"/>
+          <path id="Path_1852" data-name="Path 1852" d="M38.189,15.255l8.442-8.441,2.422,2.422V1.45H41.266l2.421,2.423-8.442,8.441" fill="none" stroke="#00bdff" stroke-linejoin="round" stroke-width="1.5"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
