@@ -46,6 +46,9 @@ import FuturesCFDs from "./pages/futures-cfds";
 import VirtualPrivateServer from "./pages/virtual-private-server";
 import TradingServers from "./pages/trading-servers";
 import MT4AdvancedTools from "./pages/mt4-advanced-tools";
+import ICInsights from "./pages/ic-insights";
+import TradingCentral from "./pages/trading-central";
+
 
 const App = () => {
   return (
@@ -114,6 +117,9 @@ const App = () => {
           <Route path="/virtual-private-server" element={<VirtualPrivateServer />} /> 
          <Route path="/trading-servers" element={<TradingServers />} /> 
          <Route path="/mt4-advanced-tools" element={<MT4AdvancedTools />} /> 
+         <Route path="/ic-insights" element={<ICInsights />} /> 
+         <Route path="/trading-central" element={<TradingCentral />} /> 
+       
 
 
 

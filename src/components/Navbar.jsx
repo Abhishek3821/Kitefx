@@ -116,7 +116,7 @@ const Navbar = () => {
                         px-8 py-10
                         w-[calc(100vw-2rem)]
                         max-w-7xl
-                        ${flipUp ? "bottom-24" : "top-24"}
+                        ${flipUp ? "bottom-24" : "top-18"}
                       `}
                     >
                       <div className="flex flex-col lg:flex-row gap-10 items-start">

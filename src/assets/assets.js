@@ -190,10 +190,7 @@ export const navItems = [
       },
 
       // ================= TradingView + Tools =================
-      {
-        title: "TradingView",
-        links: [{ label: "TradingView", href: "/trading-view" }],
-      },
+     
       {
         title: "Trading Tools",
         links: [
@@ -209,6 +206,10 @@ export const navItems = [
           { label: "IC Insights", href: "/ic-insights" },
           { label: "Trading Central", href: "/trading-central" },
         ],
+      },
+       {
+        title: "TradingView",
+        links: [{ label: "TradingView", href: "/trading-view" }],
       },
     ],
   },
