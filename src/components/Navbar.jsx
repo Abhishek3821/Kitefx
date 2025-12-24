@@ -1,34 +1,29 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { assets, navItems } from "../assets/assets";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Plus, Minus, ChevronDown } from "lucide-react";
 
+/* ---------------- Dropdown Animation ---------------- */
 const dropdownVariants = {
   hidden: {
     opacity: 0,
-    y: -10,
+    y: -12,
     scale: 0.96,
-    filter: "blur(4px)",
   },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
-    filter: "blur(0px)",
-    transition: {
-      duration: 0.35,
-      ease: "easeOut",
-    },
+    transition: { duration: 0.3, ease: "easeOut" },
   },
   exit: {
     opacity: 0,
     y: -8,
     scale: 0.96,
-    filter: "blur(4px)",
-    transition: { duration: 0.25 },
+    transition: { duration: 0.2 },
   },
 };
 
@@ -38,10 +33,7 @@ const Navbar = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [expandedItems, setExpandedItems] = useState({});
   const [activeDesktopIndex, setActiveDesktopIndex] = useState(null);
-  const [dropdownStyle, setDropdownStyle] = useState({});
   const [flipUp, setFlipUp] = useState(false);
-
-  const dropdownRef = useRef(null);
 
   /* ---------------- Scroll Hide / Show ---------------- */
   useEffect(() => {
@@ -54,61 +46,40 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [lastScrollY]);
 
-  /* ---------------- Outside Click ---------------- */
-  useEffect(() => {
-    const handler = (e) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
-        setActiveDesktopIndex(null);
-      }
-    };
-    document.addEventListener("mousedown", handler);
-    return () => document.removeEventListener("mousedown", handler);
-  }, []);
-
   /* ---------------- Mobile Scroll Lock ---------------- */
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "unset";
     return () => (document.body.style.overflow = "unset");
   }, [mobileMenuOpen]);
 
-  const toggleExpandedItem = (index) => {
-    setExpandedItems((p) => ({ ...p, [index]: !p[index] }));
+  /* ---------------- Hover Open ---------------- */
+  const openDesktopDropdown = (index, event) => {
+    const rect = event.currentTarget.getBoundingClientRect();
+    const estimatedHeight = 420;
+
+    setFlipUp(window.innerHeight - rect.bottom < estimatedHeight);
+    setActiveDesktopIndex(index);
   };
 
-  /* ---------------- Smart Dropdown Position ---------------- */
-  const toggleDesktopDropdown = (index, event) => {
-    if (activeDesktopIndex === index) {
-      setActiveDesktopIndex(null);
-      return;
-    }
+  const closeDesktopDropdown = () => {
+    setActiveDesktopIndex(null);
+  };
 
-    const rect = event.currentTarget.getBoundingClientRect();
-    const width = Math.min(window.innerWidth * 0.95, 1152);
-    const padding = 16;
-    const height = 420;
-
-    let left = rect.left + rect.width / 2 - width / 2;
-    if (left < padding) left = padding;
-    if (left + width > window.innerWidth - padding) {
-      left = window.innerWidth - width - padding;
-    }
-
-    setFlipUp(window.innerHeight - rect.bottom < height);
-
-    setDropdownStyle({ left, width });
-    setActiveDesktopIndex(index);
+  /* ---------------- Mobile Expand ---------------- */
+  const toggleExpandedItem = (index) => {
+    setExpandedItems((p) => ({ ...p, [index]: !p[index] }));
   };
 
   return (
     <>
       {/* ================= NAVBAR ================= */}
       <motion.nav
-        initial={{ y: 0 }}
         animate={{ y: showNavbar ? 0 : -100 }}
         transition={{ duration: 0.35, ease: "easeInOut" }}
         className="fixed top-0 left-0 w-full z-50 bg-black px-4 sm:px-6 py-4"
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center relative">
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          {/* Logo */}
           <NavLink to="/">
             <img src={assets.ellitefxLogoDark} className="h-7" alt="logo" />
           </NavLink>
@@ -116,33 +87,40 @@ const Navbar = () => {
           {/* ================= DESKTOP MENU ================= */}
           <ul className="hidden lg:flex gap-8 items-center">
             {navItems.map((item, idx) => (
-              <li key={idx}>
-                <button
-                  onClick={(e) => toggleDesktopDropdown(idx, e)}
-                  className="flex items-center gap-1 text-white font-medium hover:text-gray-300 transition"
-                >
+              <li
+                key={idx}
+                onMouseEnter={(e) =>
+                  item.dropdown && openDesktopDropdown(idx, e)
+                }
+                onMouseLeave={closeDesktopDropdown}
+                className="relative"
+              >
+                <span className="flex items-center gap-1 text-white font-medium hover:text-gray-300 cursor-pointer">
                   {item.label}
                   {item.dropdown && <ChevronDown size={16} />}
-                </button>
+                </span>
 
                 {/* ================= DROPDOWN ================= */}
                 <AnimatePresence>
                   {item.dropdown && activeDesktopIndex === idx && (
                     <motion.div
-                      ref={dropdownRef}
-                      style={dropdownStyle}
                       variants={dropdownVariants}
                       initial="hidden"
                       animate="visible"
                       exit="exit"
+                      onMouseEnter={() => setActiveDesktopIndex(idx)}
+                      onMouseLeave={closeDesktopDropdown}
                       className={`
-                        absolute z-40
+                        fixed left-1/2 -translate-x-1/2
+                        z-40
                         bg-gray-100 shadow-2xl rounded-2xl
-                        p-6 lg:p-8
-                        ${flipUp ? "bottom-[72px]" : "top-[72px]"}
+                        px-6 py-4
+                        w-[calc(100vw-2rem)]
+                        max-w-7xl
+                        ${flipUp ? "bottom-24" : "top-20"}
                       `}
                     >
-                      <div className="flex flex-col lg:flex-row gap-8">
+                      <div className="flex flex-col lg:flex-row gap-10">
                         {/* Promo */}
                         <div className="w-full lg:w-1/3">
                           <h3 className="text-xl lg:text-2xl font-bold mb-4">
@@ -176,10 +154,8 @@ const Navbar = () => {
                                   <li key={lIdx}>
                                     <NavLink
                                       to={link.href}
-                                      onClick={() =>
-                                        setActiveDesktopIndex(null)
-                                      }
-                                      className="text-sm font-medium hover:text-gray-600 transition"
+                                      onClick={closeDesktopDropdown}
+                                      className="text-sm font-medium hover:text-gray-600"
                                     >
                                       {link.label}
                                     </NavLink>
@@ -197,7 +173,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Desktop Buttons */}
+          {/* Desktop CTA */}
           <div className="hidden sm:flex gap-4">
             <motion.span
               whileHover={{ scale: 1.05 }}
@@ -213,8 +189,11 @@ const Navbar = () => {
             </motion.button>
           </div>
 
-          {/* Mobile Button */}
-          <button className="lg:hidden" onClick={() => setMobileMenuOpen(!mobileMenuOpen)}>
+          {/* Mobile Toggle */}
+          <button
+            className="lg:hidden"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
             {mobileMenuOpen ? (
               <X size={24} className="text-white" />
             ) : (
@@ -246,8 +225,7 @@ const Navbar = () => {
                   onClick={() => toggleExpandedItem(idx)}
                 >
                   {item.label}
-                  {item.dropdown &&
-                    (expandedItems[idx] ? <Minus /> : <Plus />)}
+                  {item.dropdown && (expandedItems[idx] ? <Minus /> : <Plus />)}
                 </button>
               </div>
             ))}
