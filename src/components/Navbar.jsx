@@ -8,18 +8,18 @@ import { Menu, X, Plus, Minus, ChevronDown } from "lucide-react";
 
 /* ---------------- Dropdown Animation ---------------- */
 const dropdownVariants = {
-  hidden: { opacity: 0, y: -12, scale: 0.96 },
+  hidden: { opacity: 0, y: -20, scale: 0.96 },
   visible: {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.3, ease: "easeOut" },
+    transition: { duration: 0.4, ease: "easeOut" },
   },
   exit: {
     opacity: 0,
-    y: -8,
+    y: -12,
     scale: 0.96,
-    transition: { duration: 0.2 },
+    transition: { duration: 0.5 },
   },
 };
 
@@ -31,7 +31,6 @@ const Navbar = () => {
   const [activeDesktopIndex, setActiveDesktopIndex] = useState(null);
   const [flipUp, setFlipUp] = useState(false);
 
-  /* ✅ ADDED (PROMO LOGIC ONLY) */
   const activeItem =
     activeDesktopIndex !== null ? navItems[activeDesktopIndex] : null;
 
@@ -49,20 +48,16 @@ const Navbar = () => {
   /* ---------------- Mobile Scroll Lock ---------------- */
   useEffect(() => {
     document.body.style.overflow = mobileMenuOpen ? "hidden" : "unset";
-    return () => (document.body.style.overflow = "unset");
   }, [mobileMenuOpen]);
 
   /* ---------------- Desktop Hover ---------------- */
   const openDesktopDropdown = (index, event) => {
     const rect = event.currentTarget.getBoundingClientRect();
-    const estimatedHeight = 420;
-    setFlipUp(window.innerHeight - rect.bottom < estimatedHeight);
+    setFlipUp(window.innerHeight - rect.bottom < 420);
     setActiveDesktopIndex(index);
   };
 
-  const closeDesktopDropdown = () => {
-    setActiveDesktopIndex(null);
-  };
+  const closeDesktopDropdown = () => setActiveDesktopIndex(null);
 
   /* ---------------- Mobile Expand ---------------- */
   const toggleExpandedItem = (index) => {
@@ -74,10 +69,15 @@ const Navbar = () => {
       {/* ================= NAVBAR ================= */}
       <motion.nav
         animate={{ y: showNavbar ? 0 : -100 }}
-        transition={{ duration: 0.35, ease: "easeInOut" }}
-        className="fixed top-0 left-0 w-full z-50 bg-black px-4 sm:px-6 py-4"
+        transition={{ duration: 0.35 }}
+        className="
+          fixed top-0 left-0 w-full z-50
+          bg-black
+          border-b border-white/10
+          shadow-lg
+        "
       >
-        <div className="max-w-7xl mx-auto flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/">
             <img src={assets.ellitefxLogoDark} className="h-7" alt="logo" />
@@ -94,7 +94,7 @@ const Navbar = () => {
                 }
                 onMouseLeave={closeDesktopDropdown}
               >
-                <span className="flex items-center gap-1 text-white font-medium hover:text-gray-300 cursor-pointer">
+                <span className="flex items-center gap-1 text-white font-medium cursor-pointer hover:text-gray-300 transition">
                   {item.label}
                   {item.dropdown && <ChevronDown size={16} />}
                 </span>
@@ -107,61 +107,96 @@ const Navbar = () => {
                       initial="hidden"
                       animate="visible"
                       exit="exit"
-                      onMouseEnter={() => setActiveDesktopIndex(idx)}
-                      onMouseLeave={closeDesktopDropdown}
                       className={`
-                        fixed left-1/2 -translate-x-1/2
-                        z-40
-                        bg-gray-100 shadow-2xl rounded-2xl
-                        px-8 py-10
+                        fixed left-1/2 -translate-x-1/2 z-40
+                        bg-white
+                        rounded-3xl
+                        px-10 py-12
                         w-[calc(100vw-2rem)]
                         max-w-7xl
-                        ${flipUp ? "bottom-24" : "top-18"}
+                        border border-gray-200
+                        shadow-[0_30px_70px_rgba(0,0,0,0.25)]
+                        ${flipUp ? "bottom-24" : "top-20"}
                       `}
                     >
-                      <div className="flex flex-col lg:flex-row gap-10 items-start">
-                        {/* ================= PROMO (DYNAMIC ONLY) ================= */}
-                        <div className="w-full lg:w-1/3 flex flex-col items-start text-left">
-                          <h3 className="text-2xl font-bold mb-4">
-                            {activeItem?.promo?.title ||
-                              "Trade with an award-winning broker"}
+                      <div className="flex gap-12">
+                        {/* ================= PROMO ================= */}
+                        <motion.div
+                          initial={{ opacity: 0, x: -20 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.4 }}
+                          className="w-1/3 space-y-5"
+                        >
+                          <h3 className="text-2xl font-bold text-gray-900">
+                            {activeItem?.promo?.title}
                           </h3>
 
-                          <div className="flex gap-3 flex-wrap justify-start">
-                            <motion.button
-                              whileHover={{ scale: 1.05 }}
-                              className="bg-[#00bafa] text-white px-5 py-2.5 rounded-full"
-                            >
-                              {activeItem?.promo?.ctaPrimary || "START TRADING"}
-                            </motion.button>
+                          <div className="flex gap-3">
+                            <button className="
+                              bg-[#00bafa] text-white px-6 py-3 rounded-full
+                              shadow-md hover:shadow-lg
+                              transition-all duration-300
+                            ">
+                              {activeItem?.promo?.ctaPrimary}
+                            </button>
 
-                            <motion.button
-                              whileHover={{ scale: 1.05 }}
-                              className="bg-white border px-5 py-2.5 rounded-full"
-                            >
-                              {activeItem?.promo?.ctaSecondary || "TRY DEMO"}
-                            </motion.button>
+                            <button className="
+                              bg-white border px-6 py-3 rounded-full
+                              hover:bg-gray-100 transition
+                            ">
+                              {activeItem?.promo?.ctaSecondary}
+                            </button>
                           </div>
-                        </div>
+                        </motion.div>
 
                         {/* ================= LINKS ================= */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
+                        <div className="grid grid-cols-3 gap-10 w-full">
                           {item.dropdown.map((section, sIdx) => (
                             <div key={sIdx}>
-                              <h4 className="font-bold mb-3 text-sm uppercase">
+                              <h4 className="
+                                font-bold mb-4 uppercase text-xs tracking-widest
+                                text-gray-500
+                              ">
                                 {section.title}
                               </h4>
-                              <ul className="space-y-2">
+
+                              <ul className="space-y-3">
                                 {section.links.map((link, lIdx) => (
-                                  <li key={lIdx}>
+                                  <motion.li
+                                    key={lIdx}
+                                    initial={{ opacity: 0, x: -10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    transition={{ delay: lIdx * 0.05 }}
+                                    className="group"
+                                  >
                                     <NavLink
                                       to={link.href}
                                       onClick={closeDesktopDropdown}
-                                      className="text-sm font-medium hover:text-gray-600"
+                                      className="
+                                        flex items-center gap-2
+                                        text-sm font-medium text-gray-800
+                                        relative transition-all duration-300
+                                        hover:text-black
+                                      "
                                     >
+                                      <span className="
+                                        opacity-0 -translate-x-2
+                                        group-hover:opacity-100 group-hover:translate-x-0
+                                        transition-all duration-300
+                                      ">
+                                        →
+                                      </span>
+
                                       {link.label}
+
+                                      <span className="
+                                        absolute left-0 -bottom-1 h-[2px] w-0
+                                        bg-[#00bafa]
+                                        group-hover:w-full
+                                        transition-all duration-300
+                                      " />
                                     </NavLink>
-                                  </li>
+                                  </motion.li>
                                 ))}
                               </ul>
                             </div>
@@ -176,64 +211,94 @@ const Navbar = () => {
           </ul>
 
           {/* ================= DESKTOP CTA ================= */}
-          <div className="hidden sm:flex gap-4">
-            <motion.span
-              whileHover={{ scale: 1.05 }}
-              className="bg-green-600 px-6 py-3 text-black font-bold rounded-md cursor-pointer"
-            >
+          <div className="hidden lg:flex gap-4">
+            <button className="bg-green-600 px-6 py-3 font-bold rounded-md hover:scale-105 transition">
               Start Trading
-            </motion.span>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              className="border border-green-600 text-white px-6 py-3 rounded-md font-bold"
-            >
+            </button>
+            <button className="border border-green-600 text-white px-6 py-3 rounded-md hover:bg-white/10 transition">
               Client Login
-            </motion.button>
+            </button>
           </div>
 
           {/* ================= MOBILE TOGGLE ================= */}
-          <button
-            className="lg:hidden"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? (
-              <X size={24} className="text-white" />
-            ) : (
-              <Menu size={24} className="text-white" />
-            )}
+          <button className="lg:hidden" onClick={() => setMobileMenuOpen(true)}>
+            <Menu className="text-white" />
           </button>
         </div>
       </motion.nav>
 
       {/* ================= MOBILE MENU ================= */}
-      {mobileMenuOpen && (
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          className="lg:hidden fixed inset-0 z-40 bg-white"
-        >
-          <div className="flex justify-between items-center p-4 border-b">
-            <img src={assets.ellitefxLogoDark} className="h-8" alt="logo" />
-            <button onClick={() => setMobileMenuOpen(false)}>
-              <X size={24} />
-            </button>
-          </div>
+      <AnimatePresence>
+        {mobileMenuOpen && (
+          <motion.div
+            initial={{ x: "100%" }}
+            animate={{ x: 0 }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.35 }}
+            className="fixed inset-0 z-50 bg-white overflow-y-auto"
+          >
+            <div className="flex justify-between items-center p-4 border-b">
+              <img src={assets.ellitefxLogoDark} className="h-7" />
+              <button onClick={() => setMobileMenuOpen(false)}>
+                <X />
+              </button>
+            </div>
 
-          <div className="p-4 space-y-2">
-            {navItems.map((item, idx) => (
-              <div key={idx} className="border-b">
-                <button
-                  className="w-full flex justify-between py-4 text-lg font-semibold"
-                  onClick={() => toggleExpandedItem(idx)}
-                >
-                  {item.label}
-                  {item.dropdown && (expandedItems[idx] ? <Minus /> : <Plus />)}
+            <div className="p-4 space-y-5">
+              {navItems.map((item, idx) => (
+                <div key={idx}>
+                  <button
+                    className="w-full flex justify-between text-lg font-semibold"
+                    onClick={() => toggleExpandedItem(idx)}
+                  >
+                    {item.label}
+                    {item.dropdown &&
+                      (expandedItems[idx] ? <Minus /> : <Plus />)}
+                  </button>
+
+                  <AnimatePresence>
+                    {expandedItems[idx] && item.dropdown && (
+                      <motion.div
+                        initial={{ height: 0, opacity: 0 }}
+                        animate={{ height: "auto", opacity: 1 }}
+                        exit={{ height: 0, opacity: 0 }}
+                        className="pl-4 mt-3 space-y-4"
+                      >
+                        {item.dropdown.map((section, sIdx) => (
+                          <div key={sIdx}>
+                            <p className="font-bold text-sm mb-2">
+                              {section.title}
+                            </p>
+                            {section.links.map((link, lIdx) => (
+                              <NavLink
+                                key={lIdx}
+                                to={link.href}
+                                onClick={() => setMobileMenuOpen(false)}
+                                className="block py-1"
+                              >
+                                {link.label}
+                              </NavLink>
+                            ))}
+                          </div>
+                        ))}
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              ))}
+
+              <div className="pt-6 space-y-3">
+                <button className="w-full bg-green-600 py-3 rounded-md font-bold">
+                  Start Trading
+                </button>
+                <button className="w-full border py-3 rounded-md">
+                  Client Login
                 </button>
               </div>
-            ))}
-          </div>
-        </motion.div>
-      )}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </>
   );
 };
