@@ -43,9 +43,9 @@ import Bonds from "./pages/bonds";
 import DigitalCurrencies from "./pages/digital-currencies";
 import StocksCFDs from "./pages/shares-cfds";
 import FuturesCFDs from "./pages/futures-cfds";
-
-
-
+import VirtualPrivateServer from "./pages/virtual-private-server";
+import TradingServers from "./pages/trading-servers";
+import MT4AdvancedTools from "./pages/mt4-advanced-tools";
 
 const App = () => {
   return (
@@ -110,6 +110,16 @@ const App = () => {
           <Route path="/trading-hours" element={<TradingHours />} />
           <Route path="/forex-spreads" element={<SimplePricing />} />
           <Route path="/swap-rates" element={<SwapRates />} />
+
+          <Route path="/virtual-private-server" element={<VirtualPrivateServer />} /> 
+         <Route path="/trading-servers" element={<TradingServers />} /> 
+         <Route path="/mt4-advanced-tools" element={<MT4AdvancedTools />} /> 
+
+
+
+
+
+
         </Routes>
         <Footer />
       </Router>
