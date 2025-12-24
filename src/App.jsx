@@ -8,7 +8,7 @@ import Islamic from "./pages/Islamic";
 import WhyICMarketsGlobal from "./pages/WhyICMarketsGlobal";
 import Whatyoucantrade from "./pages/Whatyoucantrade";
 import SimplePricing from "./pages/SimplePricing";
-import ForexTrading from "./pages/ForexTrading"; 
+import ForexTrading from "./pages/ForexTrading";
 import RangeofProducts from "./pages/RangeofProducts";
 import RawSpread from "./pages/RawSpread";
 import Standard from "./pages/Standard";
@@ -21,6 +21,22 @@ import Metatrader5 from "./pages/Metatrader5";
 import MetatraderIphoneIpad from "./pages/MetatraderIphoneIpad";
 import MetatraderAndroid from "./pages/MetatraderAndroid";
 import ForexCFDs from "./pages/ForexCFDs";
+import CTrader from "./pages/CTrader";
+import CTraderWeb from "./pages/CTraderWeb";
+import CTraderIphoneIpad from "./pages/CTraderIphoneIpad";
+import CTraderIMac from "./pages/CTraderIMac";
+import CTRaderAndroid from "./pages/CTRaderAndroid";
+import CTraderCopyTrading from "./pages/CTraderCopyTrading";
+import TradingView from "./pages/TradingView";
+import AboutUs from "./pages/AboutUs";
+import Careers from "./pages/Careers";
+import ContactUs from "./pages/ContactUs";
+import EconomicCalender from "./pages/EconomicCalender";
+import ForexCalculator from "./pages/ForexCalculator";
+import TradingConditions from "./pages/TradingConditions";
+import TradingHours from "./pages/TradingHours";
+import SwapRates from "./pages/SwapRates";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -29,28 +45,56 @@ const App = () => {
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
-          <Route path="/AccountOverview" element={<AccountOverview />} />
-          <Route path="/CTraderRawSpread" element={<CTraderRawSpread />} />
-          <Route path="/Islamic" element={<Islamic />} />
-          <Route path="/WhyICMarketsGlobal" element={<WhyICMarketsGlobal />} />
-          <Route path="/Whatyoucantrade" element={<Whatyoucantrade />} />
-          <Route path="/SimplePricing" element={<SimplePricing />} />
-          <Route path="/ForexTrading" element={<ForexTrading />} />
-          <Route path="/RangeofProducts" element={<RangeofProducts />} />
-          <Route path="/RawSpread" element={<RawSpread />} />
-          <Route path="/Standard" element={<Standard />} />
-          <Route path="/SwapFreeChargesTable" element={<SwapFreeChargesTable />} />
-          <Route path="/Howtowithdraw" element={<Howtowithdraw />} />
-          <Route path="/Howtodeposit" element={<Howtodeposit />} />
-          <Route path="/MetatraderWebtrader" element={<MetatraderWebtrader />} />
-          <Route path="/Metatrader4" element={<Metatrader4 />} />
-          <Route path="/Metatrader5" element={<Metatrader5 />} />
+          <Route path="/account-overview" element={<AccountOverview />} />
+          <Route path="/ctrader-raw-spread" element={<CTraderRawSpread />} />
+          <Route path="/islamic" element={<Islamic />} />
+          <Route path="/what-you-can-trade" element={<Whatyoucantrade />} />
+          <Route path="/simple-pricing" element={<SimplePricing />} />
+          <Route path="/forex-trading" element={<ForexTrading />} />
+          <Route path="/range-of-products" element={<RangeofProducts />} />
+          <Route path="/raw-spread" element={<RawSpread />} />
+          <Route path="/standard" element={<Standard />} />
+          <Route
+            path="/swap-free-charges-table"
+            element={<SwapFreeChargesTable />}
+          />
+          <Route path="/how-to-withdraw" element={<Howtowithdraw />} />
+          <Route path="/how-to-deposit" element={<Howtodeposit />} />
+          <Route
+            path="/metatrader-webtrader"
+            element={<MetatraderWebtrader />}
+          />
+          <Route path="/metatrader-4" element={<Metatrader4 />} />
+          <Route path="/metatrader-5" element={<Metatrader5 />} />
 
-          <Route path="/MetatraderIphoneIpad" element={<MetatraderIphoneIpad />} />
-          <Route path="/MetatraderAndroid" element={<MetatraderAndroid />} />
-          <Route path="/ForexCFDs" element={<ForexCFDs />} />
-           
+          <Route
+            path="/metatrader-iphone/ipad"
+            element={<MetatraderIphoneIpad />}
+          />
+          <Route path="/metatrader-android" element={<MetatraderAndroid />} />
+          <Route path="/ctrader" element={<CTrader />} />
+          <Route path="/ctrader-web" element={<CTraderWeb />} />
+          <Route path="/ctrader-iphone/ipad" element={<CTraderIphoneIpad />} />
+          <Route path="/ctrader-imac" element={<CTraderIMac />} />
+          <Route path="/ctrader-android" element={<CTRaderAndroid />} />
+          <Route
+            path="/ctrader-copy-trading"
+            element={<CTraderCopyTrading />}
+          />
+          <Route path="/trading-view" element={<TradingView />} />
+          <Route path="/forex-cfds" element={<ForexCFDs />} />
+          <Route path="/why-kitefx" element={<WhyICMarketsGlobal />} />
+          <Route path="/about-kitefx" element={<AboutUs />} />
+          <Route path="/careers" element={<Careers />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/economic-calender" element={<EconomicCalender />} />
+          <Route path="/forex-calculator" element={<ForexCalculator />} />
+          <Route path="/trading-conditions" element={<TradingConditions />} />
+          <Route path="/trading-hours" element={<TradingHours />} />
+          <Route path="/forex-spreads" element={<SimplePricing />} />
+          <Route path="/swap-rates" element={<SwapRates />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );

@@ -24,7 +24,6 @@ const Homepage = () => {
       <StrengthInNumbers />
       <PaymentMethods />
       <AccountStepsAndPromo />
-      <InstantAccountCTA />
     </div>
   );
 };

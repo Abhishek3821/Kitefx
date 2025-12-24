@@ -16,6 +16,13 @@ import kitefx15 from "./kitefx15.webp";
 import kitefx16 from "./kitefx16.webp";
 import kitefx17 from "./kitefx17.webp";
 import kitefx18 from "./kitefx18.webp";
+import kitefx19 from "./kitefx19.webp";
+import kitefx20 from "./kitefx20.webp";
+import kitefx21 from "./kitefx21.webp";
+import kitefx22 from "./kitefx22.webp";
+import kitefx23 from "./kitefx23.webp";
+import kitefx24 from "./kitefx24.webp";
+import kitefx25 from "./kitefx25.webp";
 
 export const assets = {
   kitefx1,
@@ -36,6 +43,13 @@ export const assets = {
   kitefx16,
   kitefx17,
   kitefx18,
+  kitefx19,
+  kitefx20,
+  kitefx21,
+  kitefx22,
+  kitefx23,
+  kitefx24,
+  kitefx25,
 };
 export const navItems = [
   {
@@ -45,10 +59,10 @@ export const navItems = [
       {
         title: "Introduction",
         links: [
-          { label: "Why IC Markets Global", href: "/WhyICMarketsGlobal" },
-          { label: "What you can trade", href: "/Whatyoucantrade" },
-          { label: "Simple Pricing", href: "/SimplePricing" },
-          { label: "Forex Trading", href: "/ForexTrading" },
+          { label: "Why KiteFX", href: "/why-kitefx" },
+          { label: "What you can trade", href: "/what-you-can-trade" },
+          { label: "Simple Pricing", href: "/simple-pricing" },
+          { label: "Forex Trading", href: "/forex-trading" },
         ],
       },
 
@@ -58,10 +72,10 @@ export const navItems = [
         links: [
           { label: "Live Accounts", href: "/live-accounts" },
           { label: "Demo Accounts", href: "/demo-accounts" },
-          { label: "How to deposit", href: "/Howtodeposit" },
+          { label: "How to deposit", href: "/how-to-deposit" },
           {
             label: "How to withdraw",
-            href: "/Howtowithdraw",
+            href: "/how-to-withdraw",
           },
         ],
       },
@@ -70,17 +84,14 @@ export const navItems = [
       {
         title: "Trading Platform",
         links: [
-          { label: "MetaTrader", href: "/efx-trader" },
+          { label: "MetaTrader", href: "/metatrader-4" },
           {
             label: "TradingView",
-            href: "/tradingview",
+            href: "/trading-view",
             badge: "NEW",
           },
           { label: "cTrader", href: "/ctrader" },
           { label: "WebTrader", href: "/webtrader" },
-          { label: "IC Social", href: "/social-trading" },
-          { label: "Signal Start", href: "/signal-start" },
-          { label: "ZuluTrade", href: "/zulutrade" },
         ],
       },
     ],
@@ -92,15 +103,15 @@ export const navItems = [
       {
         title: "Trading Accounts",
         links: [
-          { label: "Accounts Overview", href: "/AccountOverview" },
-          { label: "Raw Spread", href: "/RawSpread" },
-          { label: "cTrader Raw Spread", href: "/CTraderRawSpread" },
-          { label: "Standard", href: "/Standard" },
-          { label: "Islamic", href: "/Islamic" },
-          { label: "How to deposit", href: "/Howtodeposit" },
+          { label: "Accounts Overview", href: "/account-overview" },
+          { label: "Raw Spread", href: "/raw-spread" },
+          { label: "cTrader Raw Spread", href: "/ctrader-raw-spread" },
+          { label: "Standard", href: "/standard" },
+          { label: "Islamic", href: "/islamic" },
+          { label: "How to deposit", href: "/how-to-deposit" },
           {
             label: "How to withdraw",
-            href: "/Howtowithdraw",
+            href: "/how-to-withdraw",
           },
         ],
       },
@@ -109,8 +120,8 @@ export const navItems = [
       {
         title: "Products",
         links: [
-          { label: "Range of Products", href: "/RangeofProducts" },
-          { label: "Forex CFDs", href: "/ForexCFDs" },
+          { label: "Range of Products", href: "/range-of-products" },
+          { label: "Forex CFDs", href: "/forex-cfds" },
           { label: "Commodities CFDs", href: "/commodities" },
           { label: "Indices CFDs", href: "/indices" },
           { label: "Bonds CFDs", href: "/bonds" },
@@ -141,14 +152,13 @@ export const navItems = [
         links: [
           {
             label: "MetaTrader 5",
-            href: "/Metatrader5",
+            href: "/metatrader-5",
             badge: "RECOMMENDED",
           },
-          { label: "MetaTrader 4", href: "/Metatrader4" },
-          { label: "MetaTrader WebTrader", href: "/MetatraderWebtrader" },
-          { label: "MetaTrader iPhone/iPad", href: "/MetatraderIphoneIpad" },
-          { label: "MetaTrader Android", href: "/MetatraderAndroid" },
-          
+          { label: "MetaTrader 4", href: "/metatrader-4" },
+          { label: "MetaTrader WebTrader", href: "/metatrader-webtrader" },
+          { label: "MetaTrader iPhone/iPad", href: "/metatrader-iphone/ipad" },
+          { label: "MetaTrader Android", href: "/metatrader-android" },
         ],
       },
 
@@ -158,10 +168,9 @@ export const navItems = [
         links: [
           { label: "cTrader", href: "/ctrader" },
           { label: "cTrader Web", href: "/ctrader-web" },
-          { label: "cTrader iPhone/iPad", href: "/ctrader-ios" },
-          { label: "cTrader iMac", href: "/ctrader-mac" },
+          { label: "cTrader iPhone/iPad", href: "/ctrader-iphone/ipad" },
+          { label: "cTrader iMac", href: "/ctrader-imac" },
           { label: "cTrader Android", href: "/ctrader-android" },
-          { label: "cTrader Automate", href: "/ctrader-automate" },
           { label: "cTrader Copy Trading", href: "/ctrader-copy-trading" },
         ],
       },
@@ -169,7 +178,7 @@ export const navItems = [
       // ================= TradingView + Tools =================
       {
         title: "TradingView",
-        links: [{ label: "TradingView", href: "/tradingview" }],
+        links: [{ label: "TradingView", href: "/trading-view" }],
       },
       {
         title: "Trading Tools",
@@ -196,38 +205,10 @@ export const navItems = [
       {
         title: "Company",
         links: [
-          { label: "About ElliteFX", href: "/about-ellitefx" },
-          { label: "Why ElliteFX", href: "/why-ellitefx" },
-          {
-            label: "Sponsorship",
-            href: "/sponsorship",
-            badge: "NEW",
-          },
-          { label: "Contact Us", href: "/contact-us" },
-          { label: "Regulation", href: "/regulation" },
-          { label: "Insurance", href: "/insurance" },
-          { label: "Careers", href: "/careers" },
-        ],
-      },
+          { label: "About KiteFX", href: "/about-kitefx" },
+          { label: "Why KiteFX", href: "/why-kitefx" },
 
-      // ================= Education =================
-      {
-        title: "Education",
-        links: [
-          { label: "Education Overview", href: "/education" },
-          { label: "Advantages of Forex", href: "/advantages-of-forex" },
-          { label: "Advantages of CFDs", href: "/advantages-of-cfds" },
-          { label: "Web TV", href: "/web-tv" },
-          { label: "Webinar", href: "/webinar" },
-          {
-            label: "Podcast",
-            href: "/podcast",
-            badge: "NEW",
-          },
-          {
-            label: "Getting Started Tutorial Videos",
-            href: "/getting-started-videos",
-          },
+          { label: "Careers", href: "/careers" },
         ],
       },
 
@@ -235,92 +216,11 @@ export const navItems = [
       {
         title: "Help & Resources",
         links: [
-          { label: "Help Centre", href: "/help-centre" },
-          { label: "ElliteFX Blog", href: "/blog" },
+          { label: "Contact Us", href: "/contact-us" },
           { label: "Forex Calculators", href: "/forex-calculator" },
-          { label: "Economic Calendar", href: "/economic-calendar" },
-          { label: "Forex Glossary", href: "/forex-glossary" },
-          { label: "TeamViewer", href: "/teamviewer" },
-          { label: "Cybersecurity and Scams", href: "/cybersecurity" },
-          {
-            label: "Protecting Your Account",
-            href: "/protecting-your-account",
-          },
+          { label: "Economic Calendar", href: "/economic-calender" },
         ],
       },
-    ],
-  },
-];
-
-export const footerItems = [
-  {
-    title: "Quick Start",
-    links: [
-      { name: "Why ElliteFX", href: "/why-ellitefx" },
-      { name: "What Can You Trade?", href: "/what-can-you-trade" },
-      { name: "What is Forex Trading", href: "/forex-trading" },
-      { name: "What is CFDs Trading", href: "/cfd-trading" },
-      { name: "ECN Pricing", href: "/ecn-pricing" },
-      { name: "EFX Trader Login", href: "/efx-trader-login" },
-    ],
-  },
-  {
-    title: "Trading",
-    links: [
-      { name: "Trading Account Types", href: "/account-types" },
-      { name: "Islamic Account Types", href: "/islamic-trading-accounts" },
-      { name: "Account Funding", href: "/account-funding" },
-      { name: "Funds Withdrawal", href: "/account-funding/withdraw-funds" },
-      { name: "Spreads", href: "/forex-spreads" },
-      { name: "Swap Rates", href: "/swap-rates" },
-    ],
-  },
-  {
-    title: "Markets",
-    links: [
-      { name: "Forex", href: "/forex" },
-      { name: "Shares", href: "/shares-cfds" },
-      { name: "Metals", href: "/metals" },
-      { name: "Commodities", href: "/commodities" },
-      { name: "Indices", href: "/indices" },
-      { name: "Digital Currencies", href: "/digital-currencies" },
-      { name: "Bonds", href: "/bonds" },
-      { name: "ETFs", href: "/etf-trading" },
-    ],
-  },
-  {
-    title: "Platforms & Tools",
-    links: [
-      { name: "TradingView", href: "/tradingview" },
-      { name: "cTrader", href: "/ctrader" },
-      { name: "EFX Trading App", href: "/mobile-trading-app" },
-      { name: "TradeMedic", href: "/trademedic" },
-      { name: "MAM/PAMM", href: "/mam-pamm" },
-      { name: "VPS", href: "/virtual-private-server" },
-      { name: "Traders Toolbox", href: "/traders-toolbox" },
-      { name: "Trading Central", href: "/trading-central" },
-    ],
-  },
-  {
-    title: "Copy & Social Trading",
-    links: [
-      { name: "Social Trading", href: "/social-trading" },
-      { name: "Signal Start", href: "/signal-start" },
-      { name: "Forex Calculator", href: "/forex-calculator" },
-      { name: "EFX Fees & Charges", href: "/efx-fees-and-charges" },
-      { name: "MT4 Fees & Charges", href: "/mt4-fees-charges" },
-      { name: "Holiday Trading Hours", href: "/holiday-trading-hours" },
-    ],
-  },
-  {
-    title: "Company & Support",
-    links: [
-      { name: "About ElliteFX", href: "/about-ellitefx" },
-      { name: "Regulation", href: "/regulation" },
-      { name: "Careers", href: "/careers" },
-      { name: "Autochartist", href: "/autochartist" },
-      { name: "FAQ", href: "/faq" },
-      { name: "Contact Us", href: "/contact-us" },
     ],
   },
 ];

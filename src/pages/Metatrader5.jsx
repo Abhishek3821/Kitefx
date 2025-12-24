@@ -1,5 +1,4 @@
 import React from "react";
-import MetaTraderTabs from "../components/MetatraderTabs";
 import MetaTraderInfo from "../components/MetaTraderInfo";
 import WhyPlatformSection from "../components/WhyPlatformSection";
 import { assets } from "../assets/assets";
@@ -7,11 +6,27 @@ import WhyPlatformDifferent from "../components/WhyPlatformDifferent";
 import AboutPlatformSection from "../components/AboutPlatformSection";
 import TwoColumnInfo from "../components/TwoColumnInfo";
 import PlatformStepsSection from "../components/PlatformStepsSection";
+import Banner from "../components/Banner";
+import Tabs from "../components/Tabs";
 
 const Metatrader5 = () => {
+  const tabs = [
+    { label: "MetaTrader 4", path: "/metatrader-4" },
+    { label: "MetaTrader 5", path: "/metatrader-5" },
+    { label: "MetaTrader WebTrader", path: "/metatrader-webtrader" },
+    { label: "MetaTrader iPhone/iPad", path: "/metatrader-iphone/ipad" },
+    { label: "MetaTrader Android", path: "/metatrader-android" },
+  ];
   return (
-    <div className="mt-24">
-      <MetaTraderTabs />
+    <div>
+      <Banner
+        title="MetaTrader 5 Platform"
+        description="MetaTrader 5 is the all-in-one platform for trading forex, stocks, indices, bonds, cryptocurrencies and CFDs on Commodities."
+        buttonText="Download MetaTrader 5"
+        onButtonClick={() => console.log("CTA clicked")}
+        backgroundImage={assets.kitefx20}
+      />
+      <Tabs tabs={tabs} />
       <MetaTraderInfo
         title="Experience the next Generation of MetaTrader 5 with IC Markets Global"
         paragraphs={[

@@ -13,9 +13,8 @@ const fadeUp = {
 
 export default function OvernightFinancingCharges() {
   return (
-    <section className="w-full bg-white py-28">
+    <section className="w-full bg-gray-200 py-28">
       <div className="max-w-5xl mx-auto px-4 text-center">
-
         {/* Heading */}
         <motion.h2
           variants={fadeUp}
@@ -37,8 +36,8 @@ export default function OvernightFinancingCharges() {
         >
           Swap free accounts do not pay or earn swap or interest on trading
           instruments, however, a holding fee will be applicable for holding
-          open positions overnight. Any trades open overnight will be charged
-          a flat rate holding fee. Rates &amp; holding period are subject to
+          open positions overnight. Any trades open overnight will be charged a
+          flat rate holding fee. Rates &amp; holding period are subject to
           change to reflect market conditions when necessary. IC Markets Raw
           Spread and Standard Account commissions and spreads apply.
         </motion.p>
@@ -58,11 +57,8 @@ export default function OvernightFinancingCharges() {
             CLICK HERE
           </a>{" "}
           to access the terms &amp; conditions governing the use of
-          <span className="font-semibold">
-            {" "}
-            Islamic Accounts
-          </span>{" "}
-          at IC Markets Global.
+          <span className="font-semibold"> Islamic Accounts</span> at IC Markets
+          Global.
         </motion.p>
 
         {/* Note */}
@@ -74,10 +70,9 @@ export default function OvernightFinancingCharges() {
           className="font-semibold text-black text-base sm:text-lg"
         >
           Note: Before applying for a swap-free account, please make sure you
-          have read, understood and agreed to comply with the relevant terms
-          and conditions.
+          have read, understood and agreed to comply with the relevant terms and
+          conditions.
         </motion.p>
-
       </div>
     </section>
   );

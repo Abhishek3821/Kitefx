@@ -2,17 +2,33 @@ import React from "react";
 import MetaTraderInfo from "../components/MetaTraderInfo";
 import WhyPlatformSection from "../components/WhyPlatformSection";
 import AdvancedTrading from "../components/AdvancedTrading";
-import MetaTraderTabs from "../components/MetatraderTabs";
 import { assets } from "../assets/assets";
 import WhyPlatformDifferent from "../components/WhyPlatformDifferent";
 import TwoColumnInfo from "../components/TwoColumnInfo";
 import AboutPlatformSection from "../components/AboutPlatformSection";
 import PlatformStepsSection from "../components/PlatformStepsSection";
+import Banner from "../components/Banner";
+import Tabs from "../components/Tabs";
 
 const Metatrader4 = () => {
+  const tabs = [
+    { label: "MetaTrader 4", path: "/metatrader-4" },
+    { label: "MetaTrader 5", path: "/metatrader-5" },
+    { label: "MetaTrader WebTrader", path: "/metatrader-webtrader" },
+    { label: "MetaTrader iPhone/iPad", path: "/metatrader-iphone/ipad" },
+    { label: "MetaTrader Android", path: "/metatrader-android" },
+  ];
+
   return (
-    <div className="mt-24">
-      <MetaTraderTabs />
+    <div>
+      <Banner
+        title="MetaTrader 4 Platform"
+        description="Experience our fast execution speeds and flexible trading conditions on the award-winning MetaTrader 4 platform."
+        buttonText="Download MetaTrader 4"
+        onButtonClick={() => console.log("CTA clicked")}
+        backgroundImage={assets.kitefx20}
+      />
+      <Tabs tabs={tabs} />
       <MetaTraderInfo
         title="Trade on the award-winning IC Markets Global MetaTrader 4 platform"
         paragraphs={[

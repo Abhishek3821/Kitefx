@@ -5,12 +5,27 @@ import { Monitor, Timer, User } from "lucide-react";
 import WhyTradePlatformSection from "../components/WhyTradePlatformSection";
 import MetatraderWebtraderBenefits from "../components/MetatraderWebtraderBenefits";
 import MetatraderWebtraderFunctionality from "../components/MetatraderWebtraderFunctionality";
-import MetaTraderTabs from "../components/MetatraderTabs";
+import Banner from "../components/Banner";
+import Tabs from "../components/Tabs";
 
 const MetaraderWebtrader = () => {
+  const tabs = [
+    { label: "MetaTrader 4", path: "/metatrader-4" },
+    { label: "MetaTrader 5", path: "/metatrader-5" },
+    { label: "MetaTrader WebTrader", path: "/metatrader-webtrader" },
+    { label: "MetaTrader iPhone/iPad", path: "/metatrader-iphone/ipad" },
+    { label: "MetaTrader Android", path: "/metatrader-android" },
+  ];
   return (
-    <div className="py-24">
-      <MetaTraderTabs />
+    <div>
+      <Banner
+        title="MetaTrader WebTrader"
+        description="Access your MetaTrader 4 or MetaTrader 5 trading account from any web browser in the world using IC Markets Global MetaTrader WebTrader."
+        buttonText="Start Trading with Web Trader"
+        onButtonClick={() => console.log("CTA clicked")}
+        backgroundImage={assets.kitefx20}
+      />
+      <Tabs tabs={tabs} />
       <PlatformWebSection
         image={assets.kitefx17}
         imageAlt="MetaTrader WebTrader"

@@ -2,14 +2,29 @@ import React from "react";
 import PlatformWebSection from "../components/PlatformWebSection";
 import { assets } from "../assets/assets";
 import { Monitor, Timer, User } from "lucide-react";
-import MetaTraderTabs from "../components/MetatraderTabs";
 import WhyTradePlatformSection from "../components/WhyTradePlatformSection";
 import MetatraderBenefitsCard from "../components/MetatraderBenefitsCard";
+import Banner from "../components/Banner";
+import Tabs from "../components/Tabs";
 
 const MetatraderIphoneIpad = () => {
+  const tabs = [
+    { label: "MetaTrader 4", path: "/metatrader-4" },
+    { label: "MetaTrader 5", path: "/metatrader-5" },
+    { label: "MetaTrader WebTrader", path: "/metatrader-webtrader" },
+    { label: "MetaTrader iPhone/iPad", path: "/metatrader-iphone/ipad" },
+    { label: "MetaTrader Android", path: "/metatrader-android" },
+  ];
   return (
-    <div className="py-24">
-      <MetaTraderTabs />
+    <div>
+      <Banner
+        title="MetaTrader for iPhone/iPad"
+        description="Stay connected to the market at all times with our tight MetaTrader Raw Spread account on your iPhone or iPad."
+        buttonText="Download Metatrader for iPhone/iPad"
+        onButtonClick={() => console.log("CTA clicked")}
+        backgroundImage={assets.kitefx20}
+      />
+      <Tabs tabs={tabs} />
       <PlatformWebSection
         image={assets.kitefx17}
         imageAlt="MetaTrader WebTrader"
