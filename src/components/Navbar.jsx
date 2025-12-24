@@ -8,11 +8,7 @@ import { Menu, X, Plus, Minus, ChevronDown } from "lucide-react";
 
 /* ---------------- Dropdown Animation ---------------- */
 const dropdownVariants = {
-  hidden: {
-    opacity: 0,
-    y: -12,
-    scale: 0.96,
-  },
+  hidden: { opacity: 0, y: -12, scale: 0.96 },
   visible: {
     opacity: 1,
     y: 0,
@@ -35,6 +31,10 @@ const Navbar = () => {
   const [activeDesktopIndex, setActiveDesktopIndex] = useState(null);
   const [flipUp, setFlipUp] = useState(false);
 
+  /* ✅ ADDED (PROMO LOGIC ONLY) */
+  const activeItem =
+    activeDesktopIndex !== null ? navItems[activeDesktopIndex] : null;
+
   /* ---------------- Scroll Hide / Show ---------------- */
   useEffect(() => {
     const handleScroll = () => {
@@ -52,11 +52,10 @@ const Navbar = () => {
     return () => (document.body.style.overflow = "unset");
   }, [mobileMenuOpen]);
 
-  /* ---------------- Hover Open ---------------- */
+  /* ---------------- Desktop Hover ---------------- */
   const openDesktopDropdown = (index, event) => {
     const rect = event.currentTarget.getBoundingClientRect();
     const estimatedHeight = 420;
-
     setFlipUp(window.innerHeight - rect.bottom < estimatedHeight);
     setActiveDesktopIndex(index);
   };
@@ -89,18 +88,18 @@ const Navbar = () => {
             {navItems.map((item, idx) => (
               <li
                 key={idx}
+                className="relative"
                 onMouseEnter={(e) =>
                   item.dropdown && openDesktopDropdown(idx, e)
                 }
                 onMouseLeave={closeDesktopDropdown}
-                className="relative"
               >
                 <span className="flex items-center gap-1 text-white font-medium hover:text-gray-300 cursor-pointer">
                   {item.label}
                   {item.dropdown && <ChevronDown size={16} />}
                 </span>
 
-                {/* ================= DROPDOWN ================= */}
+                {/* ================= MEGA DROPDOWN ================= */}
                 <AnimatePresence>
                   {item.dropdown && activeDesktopIndex === idx && (
                     <motion.div
@@ -114,35 +113,38 @@ const Navbar = () => {
                         fixed left-1/2 -translate-x-1/2
                         z-40
                         bg-gray-100 shadow-2xl rounded-2xl
-                        px-6 py-4
+                        px-8 py-10
                         w-[calc(100vw-2rem)]
                         max-w-7xl
-                        ${flipUp ? "bottom-24" : "top-20"}
+                        ${flipUp ? "bottom-24" : "top-24"}
                       `}
                     >
-                      <div className="flex flex-col lg:flex-row gap-10">
-                        {/* Promo */}
-                        <div className="w-full lg:w-1/3">
-                          <h3 className="text-xl lg:text-2xl font-bold mb-4">
-                            Trade with an award-winning broker
+                      <div className="flex flex-col lg:flex-row gap-10 items-start">
+                        {/* ================= PROMO (DYNAMIC ONLY) ================= */}
+                        <div className="w-full lg:w-1/3 flex flex-col items-start text-left">
+                          <h3 className="text-2xl font-bold mb-4">
+                            {activeItem?.promo?.title ||
+                              "Trade with an award-winning broker"}
                           </h3>
-                          <div className="flex gap-3 flex-wrap">
+
+                          <div className="flex gap-3 flex-wrap justify-start">
                             <motion.button
                               whileHover={{ scale: 1.05 }}
-                              className="bg-[#00bafa] text-white px-4 py-2 rounded-full"
+                              className="bg-[#00bafa] text-white px-5 py-2.5 rounded-full"
                             >
-                              START TRADING
+                              {activeItem?.promo?.ctaPrimary || "START TRADING"}
                             </motion.button>
+
                             <motion.button
                               whileHover={{ scale: 1.05 }}
-                              className="bg-white border px-4 py-2 rounded-full"
+                              className="bg-white border px-5 py-2.5 rounded-full"
                             >
-                              TRY DEMO
+                              {activeItem?.promo?.ctaSecondary || "TRY DEMO"}
                             </motion.button>
                           </div>
                         </div>
 
-                        {/* Links */}
+                        {/* ================= LINKS ================= */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
                           {item.dropdown.map((section, sIdx) => (
                             <div key={sIdx}>
@@ -173,7 +175,7 @@ const Navbar = () => {
             ))}
           </ul>
 
-          {/* Desktop CTA */}
+          {/* ================= DESKTOP CTA ================= */}
           <div className="hidden sm:flex gap-4">
             <motion.span
               whileHover={{ scale: 1.05 }}
@@ -189,7 +191,7 @@ const Navbar = () => {
             </motion.button>
           </div>
 
-          {/* Mobile Toggle */}
+          {/* ================= MOBILE TOGGLE ================= */}
           <button
             className="lg:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

@@ -54,6 +54,11 @@ export const assets = {
 export const navItems = [
   {
     label: "QUICK START",
+    promo: {
+      title: "Trade with a high-performance trading platform",
+      ctaPrimary: "Start Trading",
+      ctaSecondary: "Try Demo",
+    },
     dropdown: [
       // ================= Introduction =================
       {
@@ -98,6 +103,11 @@ export const navItems = [
   },
   {
     label: "TRADING",
+    promo: {
+      title: "Access Global Markets with a Multi-Asset Trading Platform",
+      ctaPrimary: "Explore Markets",
+      ctaSecondary: "View Pricing",
+    },
     dropdown: [
       // ================= Trading Accounts =================
       {
@@ -145,6 +155,11 @@ export const navItems = [
   },
   {
     label: "PLATFORMS",
+    promo: {
+      title: "Trade from anywhere, on any device, at any time",
+      ctaPrimary: "View Platforms",
+      ctaSecondary: "Download",
+    },
     dropdown: [
       // ================= MetaTrader 5 & 4 =================
       {
@@ -200,6 +215,11 @@ export const navItems = [
   },
   {
     label: "MORE",
+    promo: {
+      title: "Trade with a high-performance trading platform",
+      ctaPrimary: "Learn More",
+      ctaSecondary: "Contact Us",
+    },
     dropdown: [
       // ================= Company =================
       {
