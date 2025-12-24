@@ -48,12 +48,13 @@ import TradingServers from "./pages/trading-servers";
 import MT4AdvancedTools from "./pages/mt4-advanced-tools";
 import ICInsights from "./pages/ic-insights";
 import TradingCentral from "./pages/trading-central";
-
+import ScrollToTop from "./components/ScrollToTop";
 
 const App = () => {
   return (
     <div>
       <Router>
+      <ScrollToTop />
         <Navbar />
         <Routes>
           <Route path="/" element={<Homepage />} />
