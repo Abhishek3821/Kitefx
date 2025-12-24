@@ -37,6 +37,15 @@ import TradingConditions from "./pages/TradingConditions";
 import TradingHours from "./pages/TradingHours";
 import SwapRates from "./pages/SwapRates";
 import Footer from "./components/Footer";
+import CommoditiesCFDs from "./pages/commodities";
+import Indices from "./pages/Indices";
+import Bonds from "./pages/bonds";
+import DigitalCurrencies from "./pages/digital-currencies";
+import StocksCFDs from "./pages/shares-cfds";
+import FuturesCFDs from "./pages/futures-cfds";
+
+
+
 
 const App = () => {
   return (
@@ -83,6 +92,14 @@ const App = () => {
           />
           <Route path="/trading-view" element={<TradingView />} />
           <Route path="/forex-cfds" element={<ForexCFDs />} />
+          <Route path="/commodities" element={<CommoditiesCFDs />} />
+          <Route path="/indices" element={<Indices />} />
+          <Route path="/bonds" element={<Bonds />} />
+          <Route path="/digital-currencies" element={<DigitalCurrencies />} />
+          <Route path="/shares-cfds" element={<StocksCFDs />} />
+          <Route path="/futures-cfds" element={<FuturesCFDs />} />
+
+          
           <Route path="/why-kitefx" element={<WhyICMarketsGlobal />} />
           <Route path="/about-kitefx" element={<AboutUs />} />
           <Route path="/careers" element={<Careers />} />
