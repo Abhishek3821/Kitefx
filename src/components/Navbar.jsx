@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { assets, navItems } from "../assets/assets";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Plus, Minus, ChevronDown } from "lucide-react";
+// import { kitefx26 } from "../assets/assets";
 
 /* ---------------- Dropdown Animation ---------------- */
 const dropdownVariants = {
@@ -80,7 +81,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/">
-            <img src={assets.ellitefxLogoDark} className="h-7" alt="logo" />
+            <img src={assets.kitefx26} className="h-15 w-15" alt="logo" />
           </NavLink>
 
           {/* ================= DESKTOP MENU ================= */}

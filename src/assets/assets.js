@@ -23,6 +23,8 @@ import kitefx22 from "./kitefx22.webp";
 import kitefx23 from "./kitefx23.webp";
 import kitefx24 from "./kitefx24.webp";
 import kitefx25 from "./kitefx25.webp";
+import kitefx26 from "./logo.jpeg";
+
 export const assets = {
   kitefx1,
   kitefx2,
@@ -49,6 +51,7 @@ export const assets = {
   kitefx23,
   kitefx24,
   kitefx25,
+  kitefx26,
 };
 export const navItems = [
   {
