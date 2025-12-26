@@ -17,8 +17,8 @@ const CTraderCopyTrading = () => {
   return (
     <div>
       <Banner
-        title="cTrader Copy Trading"
-        description="IC Markets Global offers a unique opportunities for Investors and Strategy providers with Spotware’s cTrader Copy Trading platform. Designed for Easy & Transparent Copy Trading."
+        title="cTrader Copy Trading "
+        description="KiteFX Global offers a unique opportunities for Investors and Strategy providers with Spotware’s cTrader Copy Trading platform. Designed for Easy & Transparent Copy Trading. "
         buttonText="cTrader Copy Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
