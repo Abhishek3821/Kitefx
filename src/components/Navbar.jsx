@@ -81,7 +81,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/">
-            <img src={assets.kitefx26} className="h-15 w-15" alt="logo" />
+            <img src={assets.kitefx26} className="h-13 w-13" alt="logo" />
           </NavLink>
 
           {/* ================= DESKTOP MENU ================= */}
@@ -133,18 +133,22 @@ const Navbar = () => {
                           </h3>
 
                           <div className="flex gap-3">
-                            <button className="
+                            <button
+                              className="
                               bg-[#00bafa] text-white px-6 py-3 rounded-full
                               shadow-md hover:shadow-lg
                               transition-all duration-300
-                            ">
+                            "
+                            >
                               {activeItem?.promo?.ctaPrimary}
                             </button>
 
-                            <button className="
+                            <button
+                              className="
                               bg-white border px-6 py-3 rounded-full
                               hover:bg-gray-100 transition
-                            ">
+                            "
+                            >
                               {activeItem?.promo?.ctaSecondary}
                             </button>
                           </div>
@@ -154,10 +158,12 @@ const Navbar = () => {
                         <div className="grid grid-cols-3 gap-10 w-full">
                           {item.dropdown.map((section, sIdx) => (
                             <div key={sIdx}>
-                              <h4 className="
+                              <h4
+                                className="
                                 font-bold mb-4 uppercase text-xs tracking-widest
                                 text-gray-500
-                              ">
+                              "
+                              >
                                 {section.title}
                               </h4>
 
@@ -180,22 +186,26 @@ const Navbar = () => {
                                         hover:text-black
                                       "
                                     >
-                                      <span className="
+                                      <span
+                                        className="
                                         opacity-0 -translate-x-2
                                         group-hover:opacity-100 group-hover:translate-x-0
                                         transition-all duration-300
-                                      ">
+                                      "
+                                      >
                                         →
                                       </span>
 
                                       {link.label}
 
-                                      <span className="
+                                      <span
+                                        className="
                                         absolute left-0 -bottom-1 h-[2px] w-0
                                         bg-[#00bafa]
                                         group-hover:w-full
                                         transition-all duration-300
-                                      " />
+                                      "
+                                      />
                                     </NavLink>
                                   </motion.li>
                                 ))}
