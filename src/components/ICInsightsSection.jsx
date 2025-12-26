@@ -5,15 +5,14 @@ const ICInsightsSection = () => {
   return (
     <section className="bg-green-50 py-24 px-4">
       <div className="max-w-7xl mx-auto">
-
         {/* HEADER */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Why use IC Insights on your trading?
+            Why use KiteFX Insights on your trading?
           </h2>
 
           <p className="text-gray-600 mb-6">
-            Navigate finance and stocks effortlessly with IC Insights—your
+            Navigate finance and stocks effortlessly with KiteFX Insights—your
             trusted companion through stock investments and cryptocurrencies.
           </p>
 
@@ -25,7 +24,6 @@ const ICInsightsSection = () => {
 
         {/* CONTENT GRID */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-
           {/* LEFT FEATURES */}
           <div className="space-y-16">
             <Feature
@@ -45,7 +43,7 @@ const ICInsightsSection = () => {
           <div className="flex justify-center">
             <img
               src={Image}
-              alt="IC Insights Mobile App"
+              alt="KiteFX Insights Mobile App"
               className="w-full max-w-xs"
             />
           </div>
@@ -64,7 +62,6 @@ const ICInsightsSection = () => {
               text="Stay informed with News Sentiment analysis to discover if stocks are Bullish, Bearish, or Neutral — all at a glance."
             />
           </div>
-
         </div>
       </div>
     </section>
@@ -79,13 +76,9 @@ const Feature = ({ icon, title, text }) => {
         {icon}
       </div>
 
-      <h3 className="text-xl font-semibold text-gray-900 mb-2">
-        {title}
-      </h3>
+      <h3 className="text-xl font-semibold text-gray-900 mb-2">{title}</h3>
 
-      <p className="text-gray-600 text-sm leading-relaxed">
-        {text}
-      </p>
+      <p className="text-gray-600 text-sm leading-relaxed">{text}</p>
     </div>
   );
 };

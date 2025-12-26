@@ -5,27 +5,27 @@ const faqs = [
   {
     question: "What type of information can I find on IC Insights?",
     answer:
-      "IC Insights provides analyst ratings, stock sentiment, news sentiment analysis, community insights, and trending stock data to help traders make informed decisions.",
+      "KiteFX Insights provides analyst ratings, stock sentiment, news sentiment analysis, community insights, and trending stock data to help traders make informed decisions.",
   },
   {
-    question: "How reliable is the data provided by IC Insights?",
+    question: "How reliable is the data provided by KiteFX Insights?",
     answer:
-      "IC Insights data is powered by TipRanks and backed by institutional-grade research, ensuring high reliability and transparency.",
+      "KiteFX Insights data is powered by TipRanks and backed by institutional-grade research, ensuring high reliability and transparency.",
   },
   {
-    question: "Can I integrate IC Insights into my trading strategy?",
+    question: "Can I integrate KiteFX Insights into my trading strategy?",
     answer:
-      "Yes, IC Insights is designed to complement your trading strategy by providing actionable insights, sentiment analysis, and analyst opinions.",
+      "Yes, KiteFX Insights is designed to complement your trading strategy by providing actionable insights, sentiment analysis, and analyst opinions.",
   },
   {
-    question: "Is there a cost associated with using IC Insights?",
+    question: "Is there a cost associated with using KiteFX Insights?",
     answer:
-      "IC Insights is available to KiteFX clients. Some features may require a live trading account.",
+      "KiteFX Insights is available to KiteFX clients. Some features may require a live trading account.",
   },
   {
-    question: "How frequently is the information on IC Insights updated?",
+    question: "How frequently is the information on KiteFX Insights updated?",
     answer:
-      "Information on IC Insights is updated in near real-time, including analyst ratings, sentiment changes, and market news.",
+      "Information on KiteFX Insights is updated in near real-time, including analyst ratings, sentiment changes, and market news.",
   },
 ];
 

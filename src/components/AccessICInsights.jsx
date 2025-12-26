@@ -9,7 +9,7 @@ export default function AccessICInsights() {
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            How to Access IC Insights?
+            How to Access KiteFX Insights?
           </h2>
         </div>
 
