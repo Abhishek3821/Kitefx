@@ -11,7 +11,7 @@ export default function Quickstart() {
     <div>
       <Banner
         title="Spreads"
-        description="IC Markets Global's spreads are among the lowest across all major and minor currency pairs. In particular, our average EUR/USD spread* of 0.1 pips is one of the lowest in the world."
+        description="KiteFX Global's spreads are among the lowest across all major and minor currency pairs. In particular, our average EUR/USD spread* of 0.1 pips is one of the lowest in the world."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx22}
