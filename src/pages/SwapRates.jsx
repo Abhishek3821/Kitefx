@@ -8,8 +8,8 @@ const SwapRates = () => {
   return (
     <div>
       <Banner
-        title="Swap Rates"
-        description="IC Markets Global swap rates are amongst the most competitive in the world. Maximise your overnight swap earnings or reduce your swap costs across our wide range of products."
+        title="Swap Rates "
+        description="KiteFX Global swap rates are amongst the most competitive in the world. Maximise your overnight swap earnings or reduce your swap costs across our wide range of products. "
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
