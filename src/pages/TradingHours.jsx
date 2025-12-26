@@ -8,8 +8,8 @@ const TradingHours = () => {
   return (
     <div>
       <Banner
-        title="Trading Hours "
-        description="At KiteFX Global there’s always a market for you to trade. Our dedicated specialists are available for you 24 hours a day, 5 days a week. "
+        title="Trading Hours"
+        description="At KiteFX Global there’s always a market for you to trade. Our dedicated specialists are available for you 24 hours a day, 5 days a week."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
