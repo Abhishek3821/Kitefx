@@ -12,7 +12,7 @@ export default function Quickstart() {
     <div>
       <Banner
         title="Range of Products"
-        description="IC Markets Global's carefully selected range of products gives you access to the most popular and liquid markets across the world for the best trading opportunities 24/7."
+        description="KiteFX Global's carefully selected range of products gives you access to the most popular and liquid markets across the world for the best trading opportunities 24/7."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx21}
