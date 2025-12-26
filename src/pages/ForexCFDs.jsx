@@ -10,7 +10,7 @@ export default function ForexCFDs() {
     <div>
       <Banner
         title="Forex CFDs"
-        description="The IC Markets Global Forex offering is one of the most competitive in the world. Access the world’s largest and most liquid market with Raw spreads starting from 0.0 pips."
+        description="The KiteFX Global Forex offering is one of the most competitive in the world. Access the world’s largest and most liquid market with Raw spreads starting from 0.0 pips."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
