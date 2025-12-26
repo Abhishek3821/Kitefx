@@ -7,8 +7,8 @@ export default function YourAccount() {
   return (
     <div>
       <Banner
-        title="Account Funding"
-        description="IC Markets Global offers over 15 flexible funding options in 10 different base currencies. Deposit instantly and for free using a range of methods."
+        title="Account Funding "
+        description="KiteFX Global offers over 15 flexible funding options in 10 different base currencies. Deposit instantly and for free using a range of methods."
         buttonText="Fund your Account"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
