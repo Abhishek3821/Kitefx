@@ -10,7 +10,7 @@ export default function Standard() {
     <div>
       <Banner
         title="Standard Account"
-        description="Keep it simple with the IC Markets Global Standard account. Experience all the benefits of our Raw pricing  with an all-inclusive spread and no commissions."
+        description="Keep it simple with the KiteFX  Global Standard account. Experience all the benefits of our Raw pricing  with an all-inclusive spread and no commissions."
         buttonText="Open account"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
