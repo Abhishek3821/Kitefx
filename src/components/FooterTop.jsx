@@ -10,7 +10,7 @@ const FooterTop = () => {
         {/* ================= BRAND COLUMN ================= */}
         <div className="lg:col-span-2 space-y-6">
           <h2 className="text-2xl font-bold text-white">
-            ICMarkets <span className="text-green-500">Global</span>
+            KiteFX <span className="text-green-500">Global</span>
           </h2>
 
           <p className="text-sm leading-relaxed max-w-md">
