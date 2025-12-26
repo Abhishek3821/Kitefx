@@ -3,6 +3,8 @@ import ICInsightsSection from "../components/ICInsightsSection";
 import PoweredByTipRanks from "../components/PoweredByTipRanks";
 import AccessICInsights from "../components/AccessICInsights";
 import ICInsightsFAQ from "../components/ICInsightsFAQ";
+import Banner from "../components/Banner";
+import { assets } from "../assets/assets";
 
 export default function ICInsights() {
   return (
