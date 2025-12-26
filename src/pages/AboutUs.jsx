@@ -41,7 +41,7 @@ const AboutUs = () => {
     <section className=" bg-white overflow-hidden">
       <Banner
         title="About Us"
-        description="KiteFX Global is a regulated Forex CFD Provider. KiteFX Global fills to the gap between retail and institutional traders, making the world more tradable for everyone."
+        description="KiteFX  Global is a regulated Forex CFD Provider. KiteFX Global fills to the gap between retail and institutional traders, making the world more tradable for everyone."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
