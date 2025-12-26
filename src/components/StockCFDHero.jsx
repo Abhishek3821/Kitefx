@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 export default function StockCFDHero() {
   return (
     <section className="relative w-full min-h-[90vh] bg-black overflow-hidden">
-      
       {/* BACKGROUND IMAGE (RIGHT) */}
       <div className="absolute inset-0">
         <img
@@ -23,7 +22,6 @@ export default function StockCFDHero() {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="max-w-xl text-white space-y-8"
         >
-          
           {/* TAG */}
           <span className="inline-flex items-center gap-2 bg-green-500 text-black text-sm font-semibold px-4 py-1.5 rounded-full w-fit">
             <span className="w-4 h-4 border border-black rounded-full flex items-center justify-center text-xs">
@@ -34,8 +32,7 @@ export default function StockCFDHero() {
 
           {/* TITLE */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
-            Level Up Your Investment <br />
-            Strategies
+            Level Up Your Investment Strategies
           </h1>
 
           {/* DESCRIPTION */}

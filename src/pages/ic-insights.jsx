@@ -7,11 +7,17 @@ import ICInsightsFAQ from "../components/ICInsightsFAQ";
 export default function ICInsights() {
   return (
     <div>
-     <StockCFDHero />
-     <ICInsightsSection />
-     <PoweredByTipRanks />
-     <AccessICInsights />
-     <ICInsightsFAQ />
+      <Banner
+        title="Level Up Your Investment Strategies"
+        description="KiteFX Insights is a comprehensive investment research and analysis platform designed to empower you to make data-powered decisions."
+        buttonText="Open an Account"
+        onButtonClick={() => console.log("CTA clicked")}
+        backgroundImage={assets.kitefx20}
+      />
+      <ICInsightsSection />
+      <PoweredByTipRanks />
+      <AccessICInsights />
+      <ICInsightsFAQ />
     </div>
   );
 }
