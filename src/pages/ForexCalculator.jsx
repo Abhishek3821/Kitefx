@@ -7,8 +7,8 @@ const ForexCalculator = () => {
   return (
     <div>
       <Banner
-        title="Forex Trading Calculators "
-        description="Forex trading calculators – Calculate current pip values in your account currency across KiteFX  Global range of products. "
+        title="Forex Trading Calculators"
+        description="Forex trading calculators – Calculate current pip values in your account currency across KiteFX  Global range of products."
         backgroundImage={assets.kitefx20}
       />
       <ForexCalculator1 />
