@@ -58,7 +58,7 @@ const AccountStepsAndPromo = () => {
         {/* LEFT */}
         <div>
           <h3 className="text-3xl md:text-4xl font-bold mb-6">
-            Trade on the go with IC <br /> Markets Global mobile app
+            Trade on the go with KiteFX Global mobile app
           </h3>
 
           <div className="flex flex-wrap gap-3 mb-8">
