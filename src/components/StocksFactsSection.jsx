@@ -4,10 +4,8 @@ export default function StocksFactsSection() {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-3 gap-12 shadow-sm">
-
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6">
-
           {/* Decorative Icon */}
           <div className="relative w-14 h-14">
             <div className="absolute left-0 top-0 w-full h-full border-4 border-green-400 rounded-md" />
@@ -28,8 +26,8 @@ export default function StocksFactsSection() {
           </div>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-            IC Markets Global single stock CFD give traders the ability to trade
-            the world’s most popular companies such as Nvidia, Apple, Meta,
+            KiteFX Global single stock CFD give traders the ability to trade the
+            world’s most popular companies such as Nvidia, Apple, Meta,
             Microsoft or BHP Billiton.
           </h2>
 
@@ -42,8 +40,8 @@ export default function StocksFactsSection() {
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            Stocks are available exclusively on the IC Markets Global MetaTrader
-            5 platform which offers advanced functionalities for both new and
+            Stocks are available exclusively on the KiteFX Global MetaTrader 5
+            platform which offers advanced functionalities for both new and
             experienced traders who require world class execution and superior
             charting tools.
           </p>
@@ -67,9 +65,7 @@ export default function StocksFactsSection() {
           <div className="pt-4">
             <div className="inline-block bg-gray-50 border rounded-xl px-6 py-4">
               <p className="text-sm text-gray-500">Download</p>
-              <p className="font-bold text-lg text-gray-900">
-                Product Details
-              </p>
+              <p className="font-bold text-lg text-gray-900">Product Details</p>
             </div>
           </div>
         </div>
@@ -102,7 +98,6 @@ export default function StocksFactsSection() {
             Open Account
           </button>
         </div>
-
       </div>
     </section>
   );

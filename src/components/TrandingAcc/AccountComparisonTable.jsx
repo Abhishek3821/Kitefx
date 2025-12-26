@@ -87,7 +87,6 @@ export default function AccountComparisonTable() {
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-4">
-
         {/* -------- TOP CONTENT (SCREENSHOT PART) -------- */}
         <div className="mb-10 max-w-7xl">
           <p className="text-sm font-semibold tracking-widest text-gray-600 uppercase mb-3">
@@ -105,19 +104,19 @@ export default function AccountComparisonTable() {
             sources of pricing from up to 25 institutional-grade sources, IC
             Markets Global Raw Spread account was built for day traders,
             scalpers and expert advisors.
-            <br /><br />
+            <br />
+            <br />
             Our MetaTrader 4 and 5 servers are located in the Equinix NY4 data
             center in New York, bringing you closer to our bridge and
-            eliminating unnecessary latency. IC Markets Global MetaTrader 4
-            and 5 platforms are the preferred choice for active day traders
-            and scalpers globally.
+            eliminating unnecessary latency. KiteFX Global MetaTrader 4 and 5
+            platforms are the preferred choice for active day traders and
+            scalpers globally.
           </p>
         </div>
 
         {/* -------- TABLE -------- */}
         <div className="overflow-x-auto">
           <div className="min-w-[900px] rounded-2xl border bg-white shadow-sm">
-
             {/* HEADER */}
             <div className="grid grid-cols-[260px_repeat(4,1fr)]">
               <div />
@@ -138,9 +137,7 @@ export default function AccountComparisonTable() {
                 key={i}
                 className="grid grid-cols-[260px_repeat(4,1fr)] border-t text-sm"
               >
-                <div className="p-4 font-medium bg-gray-50">
-                  {feature}
-                </div>
+                <div className="p-4 font-medium bg-gray-50">{feature}</div>
 
                 {accounts.map((acc, j) => (
                   <div
@@ -165,17 +162,13 @@ export default function AccountComparisonTable() {
                   </button>
 
                   {acc.highlight && (
-                    <p className="mt-2 text-xs text-green-600">
-                      TRY FREE DEMO
-                    </p>
+                    <p className="mt-2 text-xs text-green-600">TRY FREE DEMO</p>
                   )}
                 </div>
               ))}
             </div>
-
           </div>
         </div>
-
       </div>
     </section>
   );

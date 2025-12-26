@@ -14,7 +14,6 @@ export default function RawPricingSection() {
   return (
     <section className="w-full bg-white py-20">
       <div className="max-w-5xl mx-auto px-4 text-center">
-
         <motion.h2
           variants={fadeUp}
           initial="hidden"
@@ -32,7 +31,7 @@ export default function RawPricingSection() {
           viewport={{ once: true }}
           className="text-gray-800 text-base sm:text-lg leading-relaxed mb-8"
         >
-          IC Markets Global is able to offer market pricing and some of the best
+          KiteFX Global is able to offer market pricing and some of the best
           trading conditions through the MetaTrader 4 and MetaTrader 5 platforms
           by providing clients with Raw Pricing.
         </motion.p>
@@ -46,13 +45,12 @@ export default function RawPricingSection() {
         >
           The Raw Pricing environment allows you to trade on institutional grade
           pricing on almost the same level of the world’s leading execution
-          venues. Executable Streaming Prices (ESP) are sent from IC Markets
+          venues. Executable Streaming Prices (ESP) are sent from KiteFX
           Global’s pricing providers to us and offered to our clients with no
-          dealing desk, price manipulation or requotes. IC Markets Global is the
+          dealing desk, price manipulation or requotes. KiteFX Global is the
           Forex CFD provider of choice for high volume traders, scalpers and
           robots who demand the tight spreads and best possible execution.
         </motion.p>
-
       </div>
     </section>
   );

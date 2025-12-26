@@ -114,8 +114,8 @@ const RawSpreadSection = () => {
           <p className="text-white/80 text-lg leading-relaxed max-w-xl">
             Raw Spreads are the difference you have been waiting for. Trade with
             spreads from 0.0 pips, no requotes, best possible prices and no
-            restrictions. IC Markets Global is the multi-asset trading platform
-            of choice for high volume traders, scalpers and robots.
+            restrictions. KiteFX Global is the multi-asset trading platform of
+            choice for high volume traders, scalpers and robots.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">

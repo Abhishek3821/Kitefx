@@ -4,10 +4,8 @@ export default function IndicesFactsSection() {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-3 gap-12 shadow-sm">
-        
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6">
-          
           {/* Decorative Bars */}
           <div className="flex items-end gap-2">
             <span className="w-1 h-12 bg-green-400 rounded"></span>
@@ -17,10 +15,10 @@ export default function IndicesFactsSection() {
           </div>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-            Indices are the most popular form of CFDs. IC Markets Global has a
-            large range of Indices from around the world to choose from,
-            including the Australian S&P 200 Index, UK FTSE 100 Index, US
-            E-mini S&P 500 and US DJIA Index.
+            Indices are the most popular form of CFDs. KiteFX Global has a large
+            range of Indices from around the world to choose from, including the
+            Australian S&P 200 Index, UK FTSE 100 Index, US E-mini S&P 500 and
+            US DJIA Index.
           </h2>
 
           <p className="text-gray-600 leading-relaxed">

@@ -4,7 +4,6 @@ const ForexVPSSection = () => {
   return (
     <section className="bg-black text-white py-24 px-4 overflow-hidden">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
         {/* LEFT CONTENT */}
         <div>
           {/* BADGES */}
@@ -28,9 +27,7 @@ const ForexVPSSection = () => {
           <ul className="space-y-4 text-gray-300 mb-8">
             <li className="flex gap-3">
               <Check className="text-green-400 mt-1" size={18} />
-              <span>
-                We understand traders, because we are traders too.
-              </span>
+              <span>We understand traders, because we are traders too.</span>
             </li>
 
             <li className="flex gap-3">
@@ -53,8 +50,8 @@ const ForexVPSSection = () => {
             <li className="flex gap-3">
               <Check className="text-green-400 mt-1" size={18} />
               <span>
-                ForexVPS will come with IC Markets Global MetaTrader 4
-                pre-installed so you can get trading immediately.
+                ForexVPS will come with KiteFX Global MetaTrader 4 pre-installed
+                so you can get trading immediately.
               </span>
             </li>
           </ul>
@@ -87,7 +84,6 @@ const ForexVPSSection = () => {
             className="w-full max-w-xl ml-auto"
           />
         </div>
-
       </div>
     </section>
   );

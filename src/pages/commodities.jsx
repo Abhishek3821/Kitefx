@@ -10,16 +10,15 @@ export default function Commodities() {
     <div>
       <Banner
         title="Commodities CFDs"
-        description="The IC Markets Global Commodities offering is one of the most competitive in the world. Access the world’s largest and most liquid market with Raw spreads starting from 0.0 pips."
+        description="The KiteFX Global Commodities offering is one of the most competitive in the world. Access the world’s largest and most liquid market with Raw spreads starting from 0.0 pips."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
       />
-      <CommoditiesFactsSection />  
+      <CommoditiesFactsSection />
       <CommoditiesOverview />
       <CFDCommoditiesSection />
       <CommodityTradingExample />
-    
     </div>
   );
 }

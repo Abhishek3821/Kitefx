@@ -48,10 +48,10 @@ const AutomatedTradingEdge = () => {
           </h2>
 
           <p className="text-lg text-white/70 leading-relaxed max-w-xl">
-            IC Markets Global is the one of the top choices for automated
-            traders. Our order matching engine located in the New York Equinix
-            NY4 data centre processes over 3,600,000 trades per day with over
-            two thirds of all trades coming from automated trading systems.
+            KiteFX Global is the one of the top choices for automated traders.
+            Our order matching engine located in the New York Equinix NY4 data
+            centre processes over 3,600,000 trades per day with over two thirds
+            of all trades coming from automated trading systems.
           </p>
         </div>
       </div>

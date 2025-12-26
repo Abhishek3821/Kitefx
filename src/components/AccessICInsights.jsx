@@ -2,7 +2,6 @@ export default function AccessICInsights() {
   return (
     <section className="w-full bg-white py-24 px-6">
       <div className="max-w-7xl mx-auto text-center space-y-20">
-        
         {/* HEADER */}
         <div className="space-y-4">
           <p className="text-sm font-medium text-green-500">
@@ -16,7 +15,6 @@ export default function AccessICInsights() {
 
         {/* STEPS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-16 text-left">
-          
           {/* STEP 1 */}
           <div className="relative space-y-4">
             <span className="absolute -top-8 left-0 text-8xl font-bold text-green-100">
@@ -28,7 +26,7 @@ export default function AccessICInsights() {
             </h3>
 
             <p className="text-gray-600 leading-relaxed relative">
-              Log in to IC Markets Global or create an account if you haven't
+              Log in to KiteFX Global or create an account if you haven't
               already, then navigate to <strong>Insights</strong> in your Client
               Area.
             </p>
@@ -66,7 +64,6 @@ export default function AccessICInsights() {
               covering Stocks, Cryptocurrencies, and selected Forex CFDs.
             </p>
           </div>
-
         </div>
 
         {/* CTA */}
@@ -75,7 +72,6 @@ export default function AccessICInsights() {
             Get Started
           </button>
         </div>
-
       </div>
     </section>
   );

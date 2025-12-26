@@ -2,7 +2,6 @@ export default function USStockTradingInfo() {
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-5xl mx-auto space-y-8 text-gray-900">
-        
         {/* TITLE */}
         <h2 className="text-3xl md:text-4xl font-bold uppercase">
           US Stock Trading
@@ -11,28 +10,23 @@ export default function USStockTradingInfo() {
         {/* INTRO */}
         <p className="text-gray-700 leading-relaxed">
           The US Internal Revenue Service (IRS) requires all non–US resident
-          holders of US equity derivatives – (this includes CFDs) to be taxed
-          on dividend adjustments.
+          holders of US equity derivatives – (this includes CFDs) to be taxed on
+          dividend adjustments.
         </p>
 
         {/* SECTION 1 */}
         <div className="space-y-2">
-          <h3 className="text-xl font-bold">
-            What does it mean for me?
-          </h3>
+          <h3 className="text-xl font-bold">What does it mean for me?</h3>
           <p className="text-gray-700 leading-relaxed">
-            When trading any US listed equities with IC Markets Global, the
-            Dividend adjustments on your long positions are credited to your
-            account, and the applicable withholding taxes are automatically
-            deducted.
+            When trading any US listed equities with KiteFX Global, the Dividend
+            adjustments on your long positions are credited to your account, and
+            the applicable withholding taxes are automatically deducted.
           </p>
         </div>
 
         {/* SECTION 2 */}
         <div className="space-y-2">
-          <h3 className="text-xl font-bold">
-            How much will be deducted?
-          </h3>
+          <h3 className="text-xl font-bold">How much will be deducted?</h3>
           <p className="text-gray-700 leading-relaxed">
             The deduction rate varies depending on the underlying market, but
             where a treaty between your country of residence and the relevant
@@ -43,9 +37,7 @@ export default function USStockTradingInfo() {
 
         {/* SECTION 3 */}
         <div className="space-y-3">
-          <h3 className="text-xl font-bold">
-            What should I do?
-          </h3>
+          <h3 className="text-xl font-bold">What should I do?</h3>
 
           <p className="text-gray-700 leading-relaxed">
             If you are an <span className="font-semibold">INDIVIDUAL</span> and
@@ -82,7 +74,6 @@ export default function USStockTradingInfo() {
             .
           </p>
         </div>
-
       </div>
     </section>
   );

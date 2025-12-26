@@ -23,9 +23,7 @@ const CareersIntro = () => {
             the best talent available. If you are looking for the chance to
             enhance and develop your career within a fast growing and innovative
             company, then{" "}
-            <span className="text-green-500 font-medium">
-              IC Markets Global
-            </span>{" "}
+            <span className="text-green-500 font-medium">KiteFX Global</span>{" "}
             could be the place for you.
           </p>
         </motion.div>
@@ -42,7 +40,7 @@ const CareersIntro = () => {
 
           <div className="space-y-4 text-gray-800 leading-relaxed max-w-6xl">
             <p>
-              As IC Markets Global continues to experience strong growth, we are
+              As KiteFX Global continues to experience strong growth, we are
               rapidly expanding our workforce around the world. This means there
               are frequent new opportunities within the company’s main areas:
               Trading, Marketing, Legal/Compliance, Sales, Support, Finance, IT

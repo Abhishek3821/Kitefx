@@ -61,7 +61,7 @@ const DividendEntitlementSection = () => {
           </p>
 
           <p>
-            IC Markets Global EX-Dividends Excel sheet shows the expected
+            KiteFX Global EX-Dividends Excel sheet shows the expected
             Indices that will have their index points adjusted for the given
             week and the actual ex-dividend adjustment amount for each index
             will be updated regularly on our blog, Ex-Dividends Adjustments.

@@ -56,9 +56,7 @@ export default function ExecutionAndPricingDetails() {
   return (
     <section className="w-full bg-white py-24">
       <div className="max-w-7xl mx-auto px-4">
-
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20">
-
           {/* LEFT COLUMN */}
           <motion.div
             initial="hidden"
@@ -73,7 +71,7 @@ export default function ExecutionAndPricingDetails() {
               </h3>
 
               <p className="text-gray-700 leading-relaxed mb-5">
-                The IC Markets Global MetaTrader 4 and 5 server is located in the{" "}
+                The KiteFX Global MetaTrader 4 and 5 server is located in the{" "}
                 <AnimatedKeywords words={["Equinix NY4", "data centre"]} /> in
                 New York. This financial ecosystem hosts over{" "}
                 <AnimatedKeywords words={["600+ institutions"]} />, exchanges,
@@ -85,9 +83,12 @@ export default function ExecutionAndPricingDetails() {
                 network ensuring{" "}
                 <AnimatedKeywords words={["low latency", "fast execution"]} />.
                 Trade servers operate with latency of{" "}
-                <AnimatedKeywords words={["less than 1 millisecond"]} /> to major
-                VPS providers, making this environment ideal for{" "}
-                <AnimatedKeywords words={["automated trading", "HFT", "scalping"]} />.
+                <AnimatedKeywords words={["less than 1 millisecond"]} /> to
+                major VPS providers, making this environment ideal for{" "}
+                <AnimatedKeywords
+                  words={["automated trading", "HFT", "scalping"]}
+                />
+                .
               </p>
             </motion.div>
 
@@ -98,18 +99,16 @@ export default function ExecutionAndPricingDetails() {
               </h3>
 
               <p className="text-gray-700 leading-relaxed mb-5">
-                IC Markets Global MetaTrader platforms have{" "}
+                KiteFX Global MetaTrader platforms have{" "}
                 <AnimatedKeywords words={["no trading restrictions"]} />.
                 Traders can place orders between the spread with{" "}
                 <AnimatedKeywords words={["zero minimum distance"]} /> and a
-                freeze level of{" "}
-                <AnimatedKeywords words={["0"]} />.
+                freeze level of <AnimatedKeywords words={["0"]} />.
               </p>
 
               <p className="text-gray-700 leading-relaxed">
-                There is{" "}
-                <AnimatedKeywords words={["no FIFO rule"]} />, allowing full
-                position hedging. Different hedge margin settings may apply
+                There is <AnimatedKeywords words={["no FIFO rule"]} />, allowing
+                full position hedging. Different hedge margin settings may apply
                 depending on the product and platform.
               </p>
             </motion.div>
@@ -129,18 +128,17 @@ export default function ExecutionAndPricingDetails() {
               </h3>
 
               <p className="text-gray-700 leading-relaxed mb-5">
-                IC Markets Global offers some of the{" "}
+                KiteFX Global offers some of the{" "}
                 <AnimatedKeywords words={["tightest spreads"]} /> globally.
-                Spreads start from{" "}
-                <AnimatedKeywords words={["0.0 pips"]} /> with the average
-                EUR/USD spread at{" "}
+                Spreads start from <AnimatedKeywords words={["0.0 pips"]} />{" "}
+                with the average EUR/USD spread at{" "}
                 <AnimatedKeywords words={["0.1 pips"]} />.
               </p>
 
               <p className="text-gray-700 leading-relaxed">
                 Our pricing connector aggregates quotes from up to{" "}
-                <AnimatedKeywords words={["25 liquidity providers"]} />, ensuring
-                best-available pricing even during{" "}
+                <AnimatedKeywords words={["25 liquidity providers"]} />,
+                ensuring best-available pricing even during{" "}
                 <AnimatedKeywords words={["high volatility"]} /> events.
               </p>
             </motion.div>
@@ -153,15 +151,14 @@ export default function ExecutionAndPricingDetails() {
 
               <p className="text-gray-700 leading-relaxed">
                 Depth of Market provides{" "}
-                <AnimatedKeywords words={["full transparency"]} /> into available
-                liquidity by displaying executable prices and volumes at every
-                level. High liquidity, asynchronous pricing and{" "}
+                <AnimatedKeywords words={["full transparency"]} /> into
+                available liquidity by displaying executable prices and volumes
+                at every level. High liquidity, asynchronous pricing and{" "}
                 <AnimatedKeywords words={["ultra-low latency"]} /> guarantee the
                 tightest possible spreads.
               </p>
             </motion.div>
           </motion.div>
-
         </div>
       </div>
     </section>

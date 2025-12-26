@@ -4,24 +4,24 @@ export default function IndicesCFDCard() {
   return (
     <section className="w-full bg-gray-50 py-1">
       <div className="max-w-7xl mx-auto px-4">
-
-        <div className="
+        <div
+          className="
           bg-white rounded-[32px] p-10 md:p-14
           border shadow-[0_40px_120px_rgba(0,0,0,0.08)]
           grid grid-cols-1 lg:grid-cols-3 gap-14 items-start
-        ">
-
+        "
+        >
           {/* LEFT CARD */}
-          <div className="
+          <div
+            className="
             bg-white rounded-3xl border
             p-8 space-y-7
             shadow-sm
-          ">
+          "
+          >
             <div>
               <p className="text-sm text-gray-500">Markets</p>
-              <h3 className="text-2xl font-bold text-black">
-                Indices
-              </h3>
+              <h3 className="text-2xl font-bold text-black">Indices</h3>
             </div>
 
             <ul className="space-y-4 text-sm">
@@ -32,39 +32,42 @@ export default function IndicesCFDCard() {
                 "All platforms",
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-4">
-                  <span className="
+                  <span
+                    className="
                     flex items-center justify-center
                     w-6 h-6 rounded-full
                     bg-green-500 shadow
-                  ">
+                  "
+                  >
                     <Check size={14} className="text-black" />
                   </span>
-                  <span className="text-gray-800 font-medium">
-                    {item}
-                  </span>
+                  <span className="text-gray-800 font-medium">{item}</span>
                 </li>
               ))}
             </ul>
 
-            <button className="
+            <button
+              className="
               w-full mt-6 py-3.5 rounded-xl
               border border-green-500
               text-green-600 font-semibold
               hover:bg-green-500 hover:text-black
               transition
-            ">
+            "
+            >
               DETAILS
             </button>
           </div>
 
           {/* RIGHT CONTENT */}
           <div className="lg:col-span-2 space-y-8">
-
             {/* Icon */}
-            <div className="
+            <div
+              className="
               w-14 h-14 flex items-center justify-center
               rounded-2xl bg-green-100
-            ">
+            "
+            >
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -83,11 +86,11 @@ export default function IndicesCFDCard() {
 
             {/* Description */}
             <p className="text-gray-600 max-w-3xl leading-relaxed text-base sm:text-lg">
-              Gain exposure to the world’s largest equity markets through
-              IC Markets Global’s offering of global Indices CFDs. With
-              spreads from 0.4 points on 25 Indices, traders can take a
-              wider view of equities markets whilst enjoying commission
-              free and 24/5 trading across major markets.
+              Gain exposure to the world’s largest equity markets through KiteFX
+              Global’s offering of global Indices CFDs. With spreads from 0.4
+              points on 25 Indices, traders can take a wider view of equities
+              markets whilst enjoying commission free and 24/5 trading across
+              major markets.
             </p>
 
             {/* Action Cards */}
@@ -105,18 +108,12 @@ export default function IndicesCFDCard() {
                     transition
                   "
                 >
-                  <p className="text-sm text-gray-500">
-                    {item.label}
-                  </p>
-                  <p className="font-semibold text-lg">
-                    {item.value}
-                  </p>
+                  <p className="text-sm text-gray-500">{item.label}</p>
+                  <p className="font-semibold text-lg">{item.value}</p>
                 </div>
               ))}
             </div>
-
           </div>
-
         </div>
       </div>
     </section>

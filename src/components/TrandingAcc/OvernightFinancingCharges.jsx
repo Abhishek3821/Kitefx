@@ -38,8 +38,8 @@ export default function OvernightFinancingCharges() {
           instruments, however, a holding fee will be applicable for holding
           open positions overnight. Any trades open overnight will be charged a
           flat rate holding fee. Rates &amp; holding period are subject to
-          change to reflect market conditions when necessary. IC Markets Raw
-          Spread and Standard Account commissions and spreads apply.
+          change to reflect market conditions when necessary. KiteFX Raw Spread
+          and Standard Account commissions and spreads apply.
         </motion.p>
 
         {/* Link */}
@@ -57,7 +57,7 @@ export default function OvernightFinancingCharges() {
             CLICK HERE
           </a>{" "}
           to access the terms &amp; conditions governing the use of
-          <span className="font-semibold"> Islamic Accounts</span> at IC Markets
+          <span className="font-semibold"> Islamic Accounts</span> at KiteFX
           Global.
         </motion.p>
 

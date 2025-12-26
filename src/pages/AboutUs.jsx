@@ -41,7 +41,7 @@ const AboutUs = () => {
     <section className=" bg-white overflow-hidden">
       <Banner
         title="About Us"
-        description="IC Markets Global is a regulated Forex CFD Provider. IC Markets Global fills to the gap between retail and institutional traders, making the world more tradable for everyone."
+        description="KiteFX Global is a regulated Forex CFD Provider. KiteFX Global fills to the gap between retail and institutional traders, making the world more tradable for everyone."
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
@@ -57,17 +57,17 @@ const AboutUs = () => {
           {/* ABOUT TEXT */}
           <motion.div variants={fadeUp} className="space-y-6">
             <p>
-              IC Markets Global is one of the most renowned Forex CFD provider,
+              KiteFX Global is one of the most renowned Forex CFD provider,
               offering trading solutions for active day traders and scalpers as
-              well as traders that are new to the forex market. IC Markets
-              Global offers its clients cutting edge trading platforms, low
-              latency connectivity and superior liquidity.
+              well as traders that are new to the forex market. KiteFX Global
+              offers its clients cutting edge trading platforms, low latency
+              connectivity and superior liquidity.
             </p>
 
             <p>
-              IC Markets Global is revolutionizing online forex trading. Traders
-              are now able to gain access to pricing previously only available
-              to investment banks and high net worth individuals.
+              KiteFX Global is revolutionizing online forex trading. Traders are
+              now able to gain access to pricing previously only available to
+              investment banks and high net worth individuals.
             </p>
 
             <p>
@@ -82,32 +82,31 @@ const AboutUs = () => {
           {/* FAQ */}
           <motion.div variants={fadeUp}>
             <h3 className="text-xl font-semibold mb-2">
-              When was IC Markets Global Founded?
+              When was KiteFX Global Founded?
             </h3>
             <p>
-              IC Markets Global was incorporated by a team of professionals in
-              the financial services industry who were instrumental in the
-              success of one of largest regulated CFD provider.
+              KiteFX Global was incorporated by a team of professionals in the
+              financial services industry who were instrumental in the success
+              of one of largest regulated CFD provider.
             </p>
           </motion.div>
 
           <motion.div variants={fadeUp}>
             <h3 className="text-xl font-semibold mb-2">
-              Why was IC Markets Global Founded?
+              Why was KiteFX Global Founded?
             </h3>
             <p>
-              IC Markets Global sought to bridge the gap between retail and
+              KiteFX Global sought to bridge the gap between retail and
               institutional clients offering a trading solution previously only
               available to Investment banks and high net worth individuals.
             </p>
             <p className="mt-4">
-              IC Markets Global Raw Spread Connectivity was born, providing
-              superior execution technology, lower spreads and unrivalled
-              liquidity.
+              KiteFX Global Raw Spread Connectivity was born, providing superior
+              execution technology, lower spreads and unrivalled liquidity.
             </p>
             <p className="mt-4">
-              IC Markets Global is dedicated to innovation, constant improvement
-              and utilising cutting edge technology previously unavailable.
+              KiteFX Global is dedicated to innovation, constant improvement and
+              utilising cutting edge technology previously unavailable.
             </p>
           </motion.div>
 
@@ -115,11 +114,11 @@ const AboutUs = () => {
           <motion.div variants={fadeUp}>
             <h2 className="text-2xl font-semibold mb-4">Mission Statement</h2>
             <p>
-              IC Markets Global mission is to create the best and most
-              transparent trading experience for retail and institutional
-              clients alike allowing traders to focus more on their trading.
-              Built by traders for traders IC Markets Global is dedicated to
-              offering superior spreads, execution and service.
+              KiteFX Global mission is to create the best and most transparent
+              trading experience for retail and institutional clients alike
+              allowing traders to focus more on their trading. Built by traders
+              for traders KiteFX Global is dedicated to offering superior
+              spreads, execution and service.
             </p>
           </motion.div>
 
@@ -144,13 +143,13 @@ const AboutUs = () => {
               Regulatory Compliance
             </h2>
             <p>
-              IC Markets Global acknowledges the importance of compliance with
-              all relevant laws, rules, regulations, policies and standards. IC
+              KiteFX Global acknowledges the importance of compliance with all
+              relevant laws, rules, regulations, policies and standards. IC
               Markets Global is committed to having strict management discipline
               and first-class controls in our compliance environment.
             </p>
             <p className="mt-4">
-              IC Markets Global holds client money in segregated client money
+              KiteFX Global holds client money in segregated client money
               accounts with top tier banking institutions. Client money is not
               used for any operational expenses or purposes.
             </p>
@@ -160,7 +159,7 @@ const AboutUs = () => {
           <motion.div variants={fadeUp}>
             <h2 className="text-2xl font-semibold mb-4">Audit</h2>
             <p>
-              IC Markets Global has in place an independent, external auditor to
+              KiteFX Global has in place an independent, external auditor to
               supplement operational processes and ensure regulatory compliance.
             </p>
           </motion.div>
@@ -169,7 +168,7 @@ const AboutUs = () => {
           <motion.div variants={fadeUp}>
             <h2 className="text-2xl font-semibold mb-4">Confidentiality</h2>
             <p>
-              IC Markets Global maintains appropriate controls and monitors the
+              KiteFX Global maintains appropriate controls and monitors the
               transfer of confidential and sensitive client information on a
               need-to-know basis and does not disclose information unless
               required by law.

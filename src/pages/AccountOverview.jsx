@@ -8,7 +8,7 @@ export default function YourAccount() {
     <div>
       <Banner
         title="Account Overview"
-        description="IC Markets Global Raw Pricing offering and large product range are included across all account types. Suited for both new and experienced traders, simply choose your preferred trading platform and pricing model to get started."
+        description="KiteFX Global Raw Pricing offering and large product range are included across all account types. Suited for both new and experienced traders, simply choose your preferred trading platform and pricing model to get started."
         buttonText="Open account"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}

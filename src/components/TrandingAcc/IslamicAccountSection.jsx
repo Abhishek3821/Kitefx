@@ -28,7 +28,7 @@ export default function IslamicAccountSection() {
               variants={fadeUp}
               className="text-xl sm:text-2xl font-semibold text-black leading-relaxed max-w-3xl"
             >
-              IC Markets Global offers Islamic accounts (also known as swap free
+              KiteFX Global offers Islamic accounts (also known as swap free
               accounts) for clients who cannot earn or pay interest due to their
               religious beliefs. The swap free option is available on both our
               Raw Spread and Standard account types on the MetaTrader 4,

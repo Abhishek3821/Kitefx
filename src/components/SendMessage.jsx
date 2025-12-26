@@ -12,9 +12,9 @@ const SendMessage = () => {
             Send us a message
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Whether you are new to IC Markets Global or have a question about
-            your existing account, we can help. Simply fill in your details
-            below and we’ll get back to you soon.
+            Whether you are new to KiteFX Global or have a question about your
+            existing account, we can help. Simply fill in your details below and
+            we’ll get back to you soon.
           </p>
         </div>
 

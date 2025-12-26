@@ -25,9 +25,7 @@ export default function RawSpreadFeature() {
   return (
     <section className="w-full bg-white py-5">
       <div className="max-w-7xl mx-auto px-4">
-
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 items-start">
-
           {/* LEFT CONTENT */}
           <motion.div
             variants={stagger}
@@ -43,11 +41,10 @@ export default function RawSpreadFeature() {
               Our Raw Spread account offers some of the lowest possible spreads
               available. Our average EUR/USD spread is{" "}
               <span className="font-bold">0.1 pips</span>, with only a small
-              commission of{" "}
-              <span className="font-bold">$3.50 per lot</span> payable per side.
-              With deep liquidity and fast execution, IC Markets Global Raw
-              Spread account was built for day traders, scalpers and expert
-              advisors.
+              commission of <span className="font-bold">$3.50 per lot</span>{" "}
+              payable per side. With deep liquidity and fast execution, KiteFX
+              Global Raw Spread account was built for day traders, scalpers and
+              expert advisors.
             </motion.p>
 
             <motion.p
@@ -56,9 +53,9 @@ export default function RawSpreadFeature() {
             >
               Our MetaTrader 4 and 5 Raw Spread servers are located in the
               Equinix NY4 data center in New York, bringing you closer to our
-              bridge, eliminating unnecessary latency. IC Markets Global
-              MetaTrader 4 and 5 platforms are the preferred choice for active
-              day traders and scalpers globally.
+              bridge, eliminating unnecessary latency. KiteFX Global MetaTrader
+              4 and 5 platforms are the preferred choice for active day traders
+              and scalpers globally.
             </motion.p>
           </motion.div>
 
@@ -71,7 +68,6 @@ export default function RawSpreadFeature() {
             className="relative"
           >
             <div className="bg-white border border-gray-200 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8">
-
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-1">
                 Forex Trading
               </p>
@@ -103,9 +99,7 @@ export default function RawSpreadFeature() {
                     <span className="flex items-center justify-center w-6 h-6 rounded-full bg-green-500 shadow">
                       <Check size={14} className="text-black" />
                     </span>
-                    <span className="text-gray-800 font-medium">
-                      {item}
-                    </span>
+                    <span className="text-gray-800 font-medium">{item}</span>
                   </motion.li>
                 ))}
               </motion.ul>
@@ -117,10 +111,8 @@ export default function RawSpreadFeature() {
               >
                 Open Account
               </motion.button>
-
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>

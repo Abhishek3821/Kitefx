@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 
 const SLIDES = [
   {
-    title: "Haas x IC: Igniting the Next Era of the IC Financial Ecosystem",
+    title: "Igniting the Next Era of the KiteFX Financial Ecosystem",
     bg: "https://images.unsplash.com/photo-1596248106033-9333494c2fb3?auto=format&fit=crop&q=80&w=1920",
   },
   {
@@ -57,7 +57,8 @@ const Hero = () => {
               {/* Content */}
               <div className="relative z-10 max-w-4xl text-center text-white">
                 <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold mb-10 leading-tight">
-                  <span className="font-bold">Haas x IC</span>: {slide.title}
+                  <span className="font-bold">Haas x KiteFX</span>:{" "}
+                  {slide.title}
                 </h1>
 
                 {/* Logos */}
@@ -88,7 +89,7 @@ const Hero = () => {
                     </div>
                     <div>
                       <div className="text-2xl font-black italic uppercase">
-                        IC Markets
+                        KiteFX
                       </div>
                       <div className="text-xs tracking-widest text-white/60">
                         Your Trading Edge

@@ -4,13 +4,10 @@ export default function FuturesCFDBox() {
   return (
     <section className="w-full bg-white py-4">
       <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-16">
-
         {/* Main Box */}
         <div className="bg-gray-50 rounded-3xl p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2 space-y-6">
-
             {/* Icon */}
             <div className="relative w-16 h-16">
               {/* Base */}
@@ -30,10 +27,10 @@ export default function FuturesCFDBox() {
 
             {/* Description */}
             <p className="text-gray-600 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl">
-              Futures are one of the most popular forms of CFDs. IC Markets Global
+              Futures are one of the most popular forms of CFDs. KiteFX Global
               offers a range of Futures from around the world, including ICE
               Dollar Index and CBOE VIX Index. Online Futures-based CFDs are
-              offered exclusively on IC Markets Global’s MetaTrader 4 Platform.
+              offered exclusively on KiteFX Global’s MetaTrader 4 Platform.
             </p>
 
             {/* Action Boxes */}
@@ -42,12 +39,10 @@ export default function FuturesCFDBox() {
               <ActionBox label="Download" value="Product Details" />
               <ActionBox label="Popular Account" value="Raw Spread" />
             </div>
-
           </div>
 
           {/* RIGHT INFO CARD */}
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
-
             <p className="text-sm text-gray-500 mb-1">Markets</p>
             <h3 className="text-2xl font-bold mb-6">Futures</h3>
 
@@ -62,9 +57,7 @@ export default function FuturesCFDBox() {
               DETAILS
             </button>
           </div>
-
         </div>
-
       </div>
     </section>
   );

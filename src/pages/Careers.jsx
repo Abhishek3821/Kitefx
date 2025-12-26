@@ -10,7 +10,7 @@ const Careers = () => {
       {" "}
       <Banner
         title="Careers"
-        description="At IC Markets Global we are always looking for the best talent to further our global growth and expansion."
+        description="At KiteFX Global we are always looking for the best talent to further our global growth and expansion."
         backgroundImage={assets.kitefx20}
       />
       <CareersIntro />

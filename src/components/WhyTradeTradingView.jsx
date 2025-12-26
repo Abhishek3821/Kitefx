@@ -5,7 +5,6 @@ export default function WhyTradeTradingView() {
   return (
     <section className="bg-black py-24 px-6">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-        
         {/* LEFT IMAGE */}
         <div className="relative flex justify-center">
           <div className="rounded-2xl overflow-hidden shadow-2xl border border-white/10">
@@ -13,19 +12,19 @@ export default function WhyTradeTradingView() {
               src={Image}
               alt="TradingView Mobile"
               className="w-full max-w-md object-cover"
-            />  
+            />
           </div>
         </div>
 
         {/* RIGHT CONTENT */}
         <div className="text-white space-y-6">
           <p className="text-green-400 font-semibold">
-            Start trading with IC Markets Global
+            Start trading with KiteFX Global
           </p>
 
           <h2 className="text-3xl md:text-4xl font-bold leading-tight">
             Why trade on TradingView <br />
-            with IC Markets Global?
+            with KiteFX Global?
           </h2>
 
           <ul className="space-y-4 mt-6">
@@ -46,7 +45,6 @@ export default function WhyTradeTradingView() {
             ))}
           </ul>
         </div>
-
       </div>
     </section>
   );

@@ -9,31 +9,31 @@ const faqs = [
   },
   {
     question:
-      "Which type of IC Markets Global account is compatible with TradingView?",
+      "Which type of KiteFX Global account is compatible with TradingView?",
     answer:
-      "IC Markets Global Standard and Raw Spread accounts are compatible with TradingView.",
+      "KiteFX Global Standard and Raw Spread accounts are compatible with TradingView.",
   },
   {
     question: "How do I fund my TradingView account?",
     answer:
-      "Funding is done via your IC Markets Global Secure Client Area using supported deposit methods.",
+      "Funding is done via your KiteFX Global Secure Client Area using supported deposit methods.",
   },
   {
     question:
       "Is it possible to trade on TradingView if my account is still pending?",
     answer:
-      "Trading is only available once your IC Markets Global account is fully approved.",
+      "Trading is only available once your KiteFX Global account is fully approved.",
   },
   {
     question:
-      "Can I trade with different IC Markets Global Account Types in my Trading Panel on TradingView?",
+      "Can I trade with different KiteFX Global Account Types in my Trading Panel on TradingView?",
     answer:
-      "Yes, you can switch between compatible IC Markets Global account types within TradingView.",
+      "Yes, you can switch between compatible KiteFX Global account types within TradingView.",
   },
   {
     question: "Where can I find information about my other trades?",
     answer:
-      "You can view all trade history and details in the IC Markets Global Client Area.",
+      "You can view all trade history and details in the KiteFX Global Client Area.",
   },
 ];
 

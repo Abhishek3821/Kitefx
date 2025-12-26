@@ -15,8 +15,8 @@ const StrengthInNumbers = () => {
           </h2>
 
           <p className="text-lg text-white/70 max-w-xl mb-12 leading-relaxed">
-            IC Markets Global is one of the largest Forex CFD providers in the
-            world by trading volume.
+            KiteFX Global is one of the largest Forex CFD providers in the world
+            by trading volume.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-6">

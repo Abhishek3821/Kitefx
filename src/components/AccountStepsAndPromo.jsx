@@ -78,11 +78,6 @@ const AccountStepsAndPromo = () => {
 
           <div className="flex gap-4">
             <img
-              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
-              alt="App Store"
-              className="h-12"
-            />
-            <img
               src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
               alt="Google Play"
               className="h-12"
@@ -103,7 +98,7 @@ const AccountStepsAndPromo = () => {
       {/* ================= WEBINARS CTA ================= */}
       <div className="max-w-7xl mx-auto bg-black rounded-md px-10 py-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-white">
         <p className="text-xl font-medium">
-          Skill up with weekly IC Markets Global WEBINARS
+          Skill up with weekly KiteFX Global WEBINARS
         </p>
 
         <button className="border-2 border-green-400 text-white px-8 py-3 rounded-lg font-semibold hover:bg-green-400 hover:text-black transition">

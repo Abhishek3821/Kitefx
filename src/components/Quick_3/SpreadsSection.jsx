@@ -2,7 +2,6 @@ export default function SpreadsSection() {
   return (
     <section className="w-full bg-white py-5">
       <div className="max-w-6xl mx-auto px-6 sm:px-8 lg:px-16">
-
         {/* Icon */}
         <div className="mb-6">
           <div className="relative w-16 h-16">
@@ -30,9 +29,8 @@ export default function SpreadsSection() {
 
         {/* Content */}
         <div className="space-y-6 text-gray-800 text-sm sm:text-base leading-relaxed max-w-5xl">
-
           <p>
-            IC Markets Global offers variable spreads on our{" "}
+            KiteFX Global offers variable spreads on our{" "}
             <span className="text-green-500 font-medium">
               MetaTrader 4, MetaTrader 5, TradingView and cTrader
             </span>{" "}
@@ -52,9 +50,7 @@ export default function SpreadsSection() {
             details are those displayed in your account through the electronic
             trading system.
           </p>
-
         </div>
-
       </div>
     </section>
   );

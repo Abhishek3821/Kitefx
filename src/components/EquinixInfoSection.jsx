@@ -15,10 +15,8 @@ export default function EquinixInfoSection() {
   return (
     <section className="w-full bg-white py-20">
       <div className="w-full px-6 lg:px-12">
-
         {/* ================= TOP GRID ================= */}
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-3 gap-14 items-start">
-
           {/* LEFT CONTENT */}
           <motion.div
             variants={stagger}
@@ -31,12 +29,15 @@ export default function EquinixInfoSection() {
               variants={fadeUp}
               className="text-xl leading-relaxed font-medium text-gray-900 max-w-6xl"
             >
-              IC Markets Global MetaTrader 4 and cTrader trade servers are located
-              in the <span className="text-green-600 font-semibold">NY4</span> and{" "}
-              <span className="text-green-600 font-semibold">LD5 IBX Equinix Data Centres</span>{" "}
-              in New York and London, providing clients with the fastest possible
-              execution speeds. Equinix data centres are known globally for
-              their secure and reliable infrastructure.
+              KiteFX Global MetaTrader 4 and cTrader trade servers are located
+              in the <span className="text-green-600 font-semibold">NY4</span>{" "}
+              and{" "}
+              <span className="text-green-600 font-semibold">
+                LD5 IBX Equinix Data Centres
+              </span>{" "}
+              in New York and London, providing clients with the fastest
+              possible execution speeds. Equinix data centres are known globally
+              for their secure and reliable infrastructure.
             </motion.p>
           </motion.div>
 
@@ -79,16 +80,23 @@ export default function EquinixInfoSection() {
               What is Equinix NY4 and LD5?
             </motion.h2>
 
-            <motion.p variants={fadeUp} className="text-gray-700 leading-relaxed">
-              The Equinix NY4 and LD5 IBX Data Centres in New York and London are
-              home to 60+ exchanges and trading platforms, 400+ buy and sell side
-              firms, 150+ financial service providers, and 675+ network bandwidth
-              options.
+            <motion.p
+              variants={fadeUp}
+              className="text-gray-700 leading-relaxed"
+            >
+              The Equinix NY4 and LD5 IBX Data Centres in New York and London
+              are home to 60+ exchanges and trading platforms, 400+ buy and sell
+              side firms, 150+ financial service providers, and 675+ network
+              bandwidth options.
             </motion.p>
 
-            <motion.p variants={fadeUp} className="text-gray-700 leading-relaxed">
-              Equinix data centres are regarded as the most reliable data centres
-              on earth, enabling ultra-low latency and lightning-fast execution.
+            <motion.p
+              variants={fadeUp}
+              className="text-gray-700 leading-relaxed"
+            >
+              Equinix data centres are regarded as the most reliable data
+              centres on earth, enabling ultra-low latency and lightning-fast
+              execution.
             </motion.p>
           </motion.div>
         </div>
@@ -110,12 +118,18 @@ export default function EquinixInfoSection() {
                 The Equinix NY4 Advantage
               </motion.h2>
 
-              <motion.p variants={fadeUp} className="text-gray-700 leading-relaxed">
-                IC Markets Global MetaTrader servers are collocated in NY4 with
-                an aggregation of 50+ banks and dark pool liquidity venues.
+              <motion.p
+                variants={fadeUp}
+                className="text-gray-700 leading-relaxed"
+              >
+                KiteFX Global MetaTrader servers are collocated in NY4 with an
+                aggregation of 50+ banks and dark pool liquidity venues.
               </motion.p>
 
-              <motion.p variants={fadeUp} className="text-gray-700 leading-relaxed">
+              <motion.p
+                variants={fadeUp}
+                className="text-gray-700 leading-relaxed"
+              >
                 Dedicated cross-connects ensure the lowest latency and fastest
                 execution speeds globally.
               </motion.p>
@@ -140,19 +154,24 @@ export default function EquinixInfoSection() {
                 The Equinix LD5 Advantage
               </motion.h2>
 
-              <motion.p variants={fadeUp} className="text-gray-700 leading-relaxed">
+              <motion.p
+                variants={fadeUp}
+                className="text-gray-700 leading-relaxed"
+              >
                 Our cTrader servers in LD5 London benefit from the same
                 institutional-grade collocation advantages.
               </motion.p>
 
-              <motion.p variants={fadeUp} className="text-gray-700 leading-relaxed">
+              <motion.p
+                variants={fadeUp}
+                className="text-gray-700 leading-relaxed"
+              >
                 Optimised for European traders, LD5 delivers ultra-fast
                 connectivity for both manual and automated trading.
               </motion.p>
             </div>
           </motion.div>
         </div>
-
       </div>
     </section>
   );

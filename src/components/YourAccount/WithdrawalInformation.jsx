@@ -10,7 +10,6 @@ export default function WithdrawalInformation() {
   return (
     <section className="w-full bg-gray-50 py-16 sm:py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-
         {/* Header */}
         <div className="mb-14">
           <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -28,25 +27,21 @@ export default function WithdrawalInformation() {
           <p className="text-gray-800 font-medium leading-relaxed">
             If you do not yet have access to your{" "}
             <span className="font-semibold">Secure Client Area</span>, please
-            follow the Access Instructions provided by IC Markets Global.
+            follow the Access Instructions provided by KiteFX Global.
           </p>
         </div>
 
         {/* Important Notes */}
-        <Card
-          icon={<AlertCircle />}
-          title="Important Notes"
-        >
+        <Card icon={<AlertCircle />} title="Important Notes">
           <ul className="list-disc pl-5 space-y-4">
             <li>
-              Withdrawal cut-off time is{" "}
-              <strong>12:00 AEST / AEDT</strong>. Requests submitted before this
-              time are processed on the same business day.
+              Withdrawal cut-off time is <strong>12:00 AEST / AEDT</strong>.
+              Requests submitted before this time are processed on the same
+              business day.
             </li>
             <li>
-              IC Markets Global does{" "}
-              <strong>not charge additional fees</strong> for deposits or
-              withdrawals. Intermediary bank fees may apply.
+              KiteFX Global does <strong>not charge additional fees</strong> for
+              deposits or withdrawals. Intermediary bank fees may apply.
             </li>
             <li>
               Funds are intended for trading purposes. Withdrawals may incur a
@@ -60,16 +55,12 @@ export default function WithdrawalInformation() {
         </Card>
 
         {/* Credit / Debit Card */}
-        <Card
-          icon={<CreditCard />}
-          title="Credit / Debit Card Withdrawals"
-        >
+        <Card icon={<CreditCard />} title="Credit / Debit Card Withdrawals">
           <ul className="list-disc pl-5 space-y-3">
             <li>Processed free of charge.</li>
             <li>
-              Typical processing time is{" "}
-              <strong>3–5 business days</strong>, but may take up to{" "}
-              <strong>10 business days</strong>.
+              Typical processing time is <strong>3–5 business days</strong>, but
+              may take up to <strong>10 business days</strong>.
             </li>
             <li>Card withdrawals may not be available in all countries.</li>
             <li>
@@ -80,10 +71,7 @@ export default function WithdrawalInformation() {
         </Card>
 
         {/* Withdrawal Rules */}
-        <Card
-          icon={<ShieldCheck />}
-          title="Withdrawal Rules & Compliance"
-        >
+        <Card icon={<ShieldCheck />} title="Withdrawal Rules & Compliance">
           <ul className="list-disc pl-5 space-y-3">
             <li>
               Withdrawals must be made to the same source used for deposits.
@@ -101,10 +89,7 @@ export default function WithdrawalInformation() {
         </Card>
 
         {/* Payment Method Info */}
-        <Card
-          icon={<Wallet />}
-          title="Payment Method Specific Information"
-        >
+        <Card icon={<Wallet />} title="Payment Method Specific Information">
           <ul className="list-disc pl-5 space-y-3">
             <li>
               WebMoney withdrawals are processed via bank transfer and may take
@@ -132,12 +117,11 @@ export default function WithdrawalInformation() {
         {/* Footer Disclaimer */}
         <div className="mt-14 rounded-2xl bg-gray-100 p-6">
           <p className="text-sm text-gray-600 leading-relaxed">
-            IC Markets Global does not process payments to third parties. Joint
+            KiteFX Global does not process payments to third parties. Joint
             accounts are accepted only if the trading account holder is listed
             on the bank account or card.
           </p>
         </div>
-
       </div>
     </section>
   );
@@ -148,9 +132,7 @@ function Card({ icon, title, children }) {
   return (
     <div className="mb-12 rounded-3xl border border-gray-200 bg-white p-8 shadow-sm">
       <div className="mb-6 flex items-center gap-3">
-        <div className="rounded-xl bg-gray-100 p-2 text-gray-700">
-          {icon}
-        </div>
+        <div className="rounded-xl bg-gray-100 p-2 text-gray-700">{icon}</div>
         <h2 className="text-xl font-bold text-gray-900">{title}</h2>
       </div>
       <div className="text-gray-700 leading-relaxed">{children}</div>

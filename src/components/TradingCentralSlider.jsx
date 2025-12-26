@@ -36,14 +36,11 @@ const TradingCentralSlider = () => {
   return (
     <section className="bg-gray-50 py-20 px-4">
       <div className="max-w-7xl mx-auto text-center space-y-6">
-
         {/* HEADER */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Trading Central
         </h2>
-        <p className="text-gray-700">
-          A touch of insightful analytic support
-        </p>
+        <p className="text-gray-700">A touch of insightful analytic support</p>
 
         {/* SLIDER */}
         <div className="relative mt-12">
@@ -97,12 +94,11 @@ const TradingCentralSlider = () => {
 
         {/* DISCLAIMER */}
         <p className="text-xs text-gray-500 max-w-5xl mx-auto pt-6">
-          IC Markets Global does not represent that the material provided here is
-          accurate, current or complete, and therefore should not be relied
-          upon as such. The information provided here is not to be considered a
+          KiteFX Global does not represent that the material provided here is
+          accurate, current or complete, and therefore should not be relied upon
+          as such. The information provided here is not to be considered a
           recommendation or offer to buy or sell any financial product.
         </p>
-
       </div>
     </section>
   );

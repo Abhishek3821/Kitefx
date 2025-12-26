@@ -9,13 +9,13 @@ const ForexSpreadsIntro = () => {
 
         {/* Description */}
         <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-          IC Markets Global offers Forex traders some of the tightest spreads out
-          of all Forex exchange brokers globally with our EUR/USD spread
-          averaging 0.1 pips. Tight spreads combined with our low latency
-          enterprise grade hardware makes IC Markets Global the ideal choice for
-          active day traders and those using Expert Advisors. The table at the
-          bottom of this page shows our minimum and average spreads across all of
-          the major currency pairs.
+          KiteFX Global offers Forex traders some of the tightest spreads out of
+          all Forex exchange brokers globally with our EUR/USD spread averaging
+          0.1 pips. Tight spreads combined with our low latency enterprise grade
+          hardware makes KiteFX Global the ideal choice for active day traders
+          and those using Expert Advisors. The table at the bottom of this page
+          shows our minimum and average spreads across all of the major currency
+          pairs.
         </p>
       </div>
     </section>

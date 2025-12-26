@@ -32,7 +32,7 @@ const TradingHours1 = () => {
 
             <h2 className="text-2xl sm:text-3xl font-semibold">
               See at a glance the market hours for all our tradable products
-              below. Please note that IC Markets Global&apos;s server time and
+              below. Please note that KiteFX Global&apos;s server time and
               charts are GMT+2 or GMT+3 (when daylight savings is in effect).
             </h2>
           </div>

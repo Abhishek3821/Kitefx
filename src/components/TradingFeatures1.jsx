@@ -32,7 +32,7 @@ const features = [
   {
     title: "Currency Pairs",
     description:
-      "IC Markets Global streams prices on 60 currency pairs and 4 metals by aggregating quotes from over 25 pricing providers for unmatched execution quality.",
+      "KiteFX Global streams prices on 60 currency pairs and 4 metals by aggregating quotes from over 25 pricing providers for unmatched execution quality.",
     icon: DollarSign,
   },
   {

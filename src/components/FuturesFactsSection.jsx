@@ -12,10 +12,8 @@ export default function FuturesFactsSection() {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-3 gap-12 shadow-sm">
-
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6">
-
           {/* Icon */}
           <div className="w-14 h-14 text-green-400">
             <svg
@@ -35,7 +33,7 @@ export default function FuturesFactsSection() {
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
             Futures CFD are priced directly from the underlying futures markets,
             with commissions, financing charges and dividend adjustments all
-            built into the spread itself. IC Markets Global offers competitive
+            built into the spread itself. KiteFX Global offers competitive
             spreads across all of our Future CFDs.
           </h2>
 
@@ -65,7 +63,6 @@ export default function FuturesFactsSection() {
               </tbody>
             </table>
           </div>
-
         </div>
 
         {/* RIGHT FACTS CARD */}
@@ -97,7 +94,6 @@ export default function FuturesFactsSection() {
             Open Account
           </button>
         </div>
-
       </div>
     </section>
   );

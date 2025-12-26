@@ -2,7 +2,6 @@ const UpcomingExpiringMarkets = () => {
   return (
     <section className="bg-white py-16 px-4">
       <div className="max-w-7xl mx-auto space-y-10">
-
         {/* RISK WARNING */}
         <div className="bg-green-100 text-gray-900 text-center px-6 py-4 rounded-xl font-medium">
           You should be aware that if the market had moved in the opposite
@@ -23,12 +22,12 @@ const UpcomingExpiringMarkets = () => {
 
         {/* DESCRIPTION */}
         <p className="text-gray-700 leading-relaxed max-w-5xl">
-          IC Markets Global Futures CFDs are set to expire two working days
-          before the contract expires on the underlying market. When a Futures
-          CFD contract expires, all open positions will be closed at the
-          futures settlement price; as reported by the futures exchange. This
-          process would usually take place on the day following the expiry.
-          Open positions are not rolled to the next front month so any clients
+          KiteFX Global Futures CFDs are set to expire two working days before
+          the contract expires on the underlying market. When a Futures CFD
+          contract expires, all open positions will be closed at the futures
+          settlement price; as reported by the futures exchange. This process
+          would usually take place on the day following the expiry. Open
+          positions are not rolled to the next front month so any clients
           wishing to hold long term positions must reopen the trade on the next
           available contract.
         </p>
@@ -73,11 +72,9 @@ const UpcomingExpiringMarkets = () => {
             </tbody>
           </table>
         </div>
-
       </div>
     </section>
   );
 };
 
 export default UpcomingExpiringMarkets;
-    

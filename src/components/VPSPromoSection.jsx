@@ -2,7 +2,6 @@ export default function VPSPromoSection() {
   return (
     <section className="py-24 px-4 bg-white">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
-        
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug">
@@ -13,7 +12,7 @@ export default function VPSPromoSection() {
           <p className="text-gray-600 leading-relaxed max-w-3xl">
             Execute your EAs in a trouble-free environment without the need for
             additional computer hardware, backup internet, or a power supply,
-            all thanks to a Virtual Private Server (VPS). IC Markets Global
+            all thanks to a Virtual Private Server (VPS). KiteFX Global
             recommends <strong>IC VPS</strong> or <strong>ForexVPS</strong>, a
             partner provider co-located within Equinix data centres with direct
             cross-connections to our trading servers in Equinix NY4.
@@ -35,7 +34,6 @@ export default function VPSPromoSection() {
             Start Trading
           </button>
         </div>
-
       </div>
     </section>
   );

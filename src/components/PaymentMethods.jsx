@@ -65,41 +65,6 @@ const PaymentMethods = () => {
           Payment methods
         </button>
       </div>
-
-      {/* LOGO STRIP */}
-      <div className="max-w-7xl mx-auto">
-        <Swiper
-          modules={[Autoplay]}
-          loop
-          slidesPerView={8} // 👈 show many logos
-          slidesPerGroup={1} // 👈 move ONE logo at a time
-          spaceBetween={32}
-          speed={800}
-          autoplay={{
-            delay: 2500,
-            disableOnInteraction: false,
-          }}
-          breakpoints={{
-            0: { slidesPerView: 3 },
-            640: { slidesPerView: 4 },
-            768: { slidesPerView: 5 },
-            1024: { slidesPerView: 7 },
-            1280: { slidesPerView: 8 },
-          }}
-        >
-          {logos.map((logo, index) => (
-            <SwiperSlide key={index}>
-              <div className="flex items-center justify-center h-16">
-                <img
-                  src={logo.src}
-                  alt={logo.name}
-                  className="h-10 object-contain grayscale hover:grayscale-0 transition"
-                />
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
     </section>
   );
 };

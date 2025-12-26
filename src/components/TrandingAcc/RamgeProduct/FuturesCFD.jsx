@@ -4,7 +4,6 @@ export default function FuturesCFD() {
   return (
     <section className="w-full bg-gray-50 py-24">
       <div className="max-w-7xl mx-auto px-4">
-
         <div
           className="
             bg-white rounded-[32px]
@@ -15,10 +14,8 @@ export default function FuturesCFD() {
             gap-14 items-start
           "
         >
-
           {/* LEFT CONTENT */}
           <div className="lg:col-span-2 space-y-7">
-
             {/* ICON */}
             <div
               className="
@@ -46,10 +43,10 @@ export default function FuturesCFD() {
 
             {/* DESCRIPTION */}
             <p className="text-gray-600 max-w-3xl leading-relaxed text-base sm:text-lg">
-              Futures are one of the most popular forms of CFDs. IC Markets Global
+              Futures are one of the most popular forms of CFDs. KiteFX Global
               offers a range of Futures from around the world, including ICE
               Dollar Index and CBOE VIX Index. Online Futures based CFDs are
-              offered exclusively on IC Markets Global’s MetaTrader 4 platform.
+              offered exclusively on KiteFX Global’s MetaTrader 4 platform.
             </p>
 
             {/* ACTION CARDS */}
@@ -84,9 +81,7 @@ export default function FuturesCFD() {
           >
             <div>
               <p className="text-sm text-gray-500">Markets</p>
-              <h3 className="text-2xl font-bold text-black">
-                Futures
-              </h3>
+              <h3 className="text-2xl font-bold text-black">Futures</h3>
             </div>
 
             <ul className="space-y-4 text-sm">
@@ -107,9 +102,7 @@ export default function FuturesCFD() {
                   >
                     <Check size={14} className="text-black" />
                   </span>
-                  <span className="text-gray-800 font-medium">
-                    {item}
-                  </span>
+                  <span className="text-gray-800 font-medium">{item}</span>
                 </li>
               ))}
             </ul>
@@ -126,7 +119,6 @@ export default function FuturesCFD() {
               DETAILS
             </button>
           </div>
-
         </div>
       </div>
     </section>

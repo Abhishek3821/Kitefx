@@ -3,7 +3,6 @@ import { motion } from "framer-motion";
 export default function TradingCentralHero() {
   return (
     <section className="relative w-full overflow-hidden bg-gradient-to-b from-[#05080f] via-[#070b12] to-black py-32">
-
       {/* GREEN WAVE / GRID GLOW */}
       <div className="absolute inset-0 pointer-events-none">
         {/* soft glow */}
@@ -30,7 +29,7 @@ export default function TradingCentralHero() {
         className="relative z-10 max-w-5xl mx-auto px-6 text-center space-y-8"
       >
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
-          Trade up with IC Markets on{" "}
+          Trade up with KiteFX on{" "}
           <span className="text-green-500">Trading Central</span>
         </h1>
 

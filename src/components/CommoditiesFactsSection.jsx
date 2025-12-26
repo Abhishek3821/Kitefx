@@ -4,7 +4,6 @@ export default function CommoditiesFactsSection() {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-3 gap-12 items-start shadow-sm">
-        
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6">
           {/* Decorative Icon */}
@@ -15,7 +14,7 @@ export default function CommoditiesFactsSection() {
           </div>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-            IC Markets Global offers a flexible and easy way to gain exposure to
+            KiteFX Global offers a flexible and easy way to gain exposure to
             some of the world’s most popular CFDs on Commodities including
             energies and metals all from within your MetaTrader 4, 5, cTrader
             and TradingView trading platforms.

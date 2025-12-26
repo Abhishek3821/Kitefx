@@ -27,9 +27,7 @@ export default function StandardAccountSection() {
   return (
     <section className="w-full bg-white py-5">
       <div className="max-w-7xl mx-auto px-4">
-
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-20 items-start">
-
           {/* LEFT CONTENT */}
           <motion.div
             initial="hidden"
@@ -48,13 +46,12 @@ export default function StandardAccountSection() {
               variants={fadeUp}
               className="text-gray-700 leading-relaxed text-base sm:text-lg max-w-3xl"
             >
-              The Standard Account from IC Markets Global offers speed of
-              execution with no rivals. Combine this with an all-inclusive
-              spread starting from <strong>0.08 pip</strong>, Equinix NY4
-              servers in New York, a group of up to{" "}
-              <strong>25 pricing providers</strong> and you will understand
-              why our standard account can give you an unparalleled trading
-              experience, all day every day.
+              The Standard Account from KiteFX Global offers speed of execution
+              with no rivals. Combine this with an all-inclusive spread starting
+              from <strong>0.08 pip</strong>, Equinix NY4 servers in New York, a
+              group of up to <strong>25 pricing providers</strong> and you will
+              understand why our standard account can give you an unparalleled
+              trading experience, all day every day.
             </motion.p>
           </motion.div>
 
@@ -79,7 +76,6 @@ export default function StandardAccountSection() {
             >
               {/* Inner Card */}
               <div className="bg-white rounded-3xl p-8 border border-gray-200">
-
                 <p className="text-sm uppercase tracking-widest text-gray-500 mb-1">
                   Forex Trading
                 </p>
@@ -101,9 +97,7 @@ export default function StandardAccountSection() {
                       <span className="flex items-center justify-center w-6 h-6 rounded-full bg-green-500 shadow">
                         <Check size={14} className="text-black" />
                       </span>
-                      <span className="text-gray-800 font-medium">
-                        {item}
-                      </span>
+                      <span className="text-gray-800 font-medium">{item}</span>
                     </li>
                   ))}
                 </ul>
@@ -119,11 +113,9 @@ export default function StandardAccountSection() {
                 >
                   Open Account
                 </motion.button>
-
               </div>
             </motion.div>
           </motion.div>
-
         </div>
       </div>
     </section>

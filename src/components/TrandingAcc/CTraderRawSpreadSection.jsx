@@ -16,9 +16,7 @@ export default function CTraderRawSpreadSection() {
   return (
     <section className="w-full bg-white py-20">
       <div className="max-w-7xl mx-auto px-4">
-
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-14 items-start">
-
           {/* LEFT CONTENT */}
           <motion.div
             initial="hidden"
@@ -30,15 +28,12 @@ export default function CTraderRawSpreadSection() {
               variants={fadeUp}
               className="text-2xl sm:text-3xl font-bold text-black leading-snug"
             >
-              IC Markets Global cTrader platform is a market leading trading
+              KiteFX Global cTrader platform is a market leading trading
               platform designed from the ground up with Forex CFD trading in
               mind.
             </motion.h2>
 
-            <motion.p
-              variants={fadeUp}
-              className="text-gray-700 font-medium"
-            >
+            <motion.p variants={fadeUp} className="text-gray-700 font-medium">
               cTrader Platform Introductory Video
             </motion.p>
 
@@ -67,7 +62,6 @@ export default function CTraderRawSpreadSection() {
             className="relative pt-10"
           >
             <div className="bg-white border border-gray-200 rounded-3xl shadow-[0_20px_60px_rgba(0,0,0,0.08)] p-8 ">
-
               <p className="text-sm uppercase tracking-widest text-gray-500 mb-1">
                 Forex Trading
               </p>
@@ -88,9 +82,7 @@ export default function CTraderRawSpreadSection() {
                     <span className="flex items-center justify-center w-6 h-6 rounded-full bg-green-500 shadow">
                       <Check size={14} className="text-black" />
                     </span>
-                    <span className="text-gray-800 font-medium">
-                      {item}
-                    </span>
+                    <span className="text-gray-800 font-medium">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -102,10 +94,8 @@ export default function CTraderRawSpreadSection() {
               >
                 Open a cTrader account
               </motion.button>
-
             </div>
           </motion.div>
-
         </div>
       </div>
     </section>

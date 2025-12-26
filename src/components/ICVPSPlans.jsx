@@ -4,21 +4,20 @@ const plans = [
   {
     title: "Standard",
     lots: "15",
-    description: "Steady performance for casual EA traders. Get started with ease.",
+    description:
+      "Steady performance for casual EA traders. Get started with ease.",
     specs: ["1 CPU", "2GB RAM", "60GB Disk Space", "Windows Server"],
   },
   {
     title: "Pro",
     lots: "30",
-    description:
-      "Advanced network, speed and more space for active traders.",
+    description: "Advanced network, speed and more space for active traders.",
     specs: ["2 CPU", "4GB RAM", "80GB Disk Space", "Windows Server"],
   },
   {
     title: "Premium",
     lots: "75",
-    description:
-      "Top-tier power and speed for professionals.",
+    description: "Top-tier power and speed for professionals.",
     specs: ["4 CPU", "6GB RAM", "90GB Disk Space", "Windows Server"],
   },
 ];
@@ -27,14 +26,13 @@ const ICVPSPlans = () => {
   return (
     <section className="bg-gray-50 py-20 px-4">
       <div className="max-w-7xl mx-auto text-center space-y-6">
-
         {/* HEADER */}
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
           Power your EAs with IC VPS
         </h2>
 
         <p className="text-gray-700 max-w-3xl mx-auto">
-          Discover IC VPS by IC Markets Global and access a fast, reliable and
+          Discover IC VPS by KiteFX Global and access a fast, reliable and
           glitch-free trading network.
         </p>
 
@@ -45,7 +43,6 @@ const ICVPSPlans = () => {
 
         {/* PLANS */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-
           {plans.map((plan, idx) => (
             <div
               key={idx}
@@ -81,7 +78,6 @@ const ICVPSPlans = () => {
               </div>
             </div>
           ))}
-
         </div>
 
         {/* FOOTNOTE */}
@@ -95,7 +91,6 @@ const ICVPSPlans = () => {
             Client Area.
           </p>
         </div>
-
       </div>
     </section>
   );

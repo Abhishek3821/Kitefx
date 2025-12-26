@@ -14,7 +14,7 @@ const Footer = () => {
         {/* CONTENT */}
         <div className="space-y-6 text-sm leading-relaxed">
           <p>
-            IC Markets Global is the trading name of Raw Trading Ltd, which is
+            KiteFX Global is the trading name of Raw Trading Ltd, which is
             regulated by the Seychelles Financial Services Authority (FSA) with
             Securities Dealer&apos;s license number SD018.
           </p>

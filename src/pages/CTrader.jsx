@@ -36,15 +36,15 @@ const CTrader = () => {
       />
       <Tabs tabs={tabs} />
       <TradingPlatformHero
-        title="Trade on the most sophisticated trading technology IC Markets Global cTrader"
-        description="cTrader platform combines the speed of high performing trading platform with the deep liquidity of IC Markets Global, providing clients with the ultimate trading solution. It utilises proven technology that will enable you to take your trading to the next level."
+        title="Trade on the most sophisticated trading technology KiteFX Global cTrader"
+        description="cTrader platform combines the speed of high performing trading platform with the deep liquidity of KiteFX Global, providing clients with the ultimate trading solution. It utilises proven technology that will enable you to take your trading to the next level."
         ctaText="Open Account"
         onCtaClick={() => console.log("Open Account Clicked")}
         systemRequirements="Minimum: Dual Core CPU processor, 2gb memory, Windows 7 Operating System onward."
         mainImage={assets.kitefx23}
       />
       <WhyTradeSection
-        title="Why trade on cTrader with IC Markets Global?"
+        title="Why trade on cTrader with KiteFX Global?"
         subtitle="The World’s Most Popular Platform"
         platformName=""
         platformLogo={assets.kitefx24}
@@ -66,20 +66,20 @@ const CTrader = () => {
         ]}
       />
       <PlatformDifferentiators
-        title="What makes IC Markets Global's cTrader Platform different?"
-        subtitle="IC Markets Global has partnered with key providers to bring you a powerful and user-friendly platform designed to take your trading to the next level."
+        title="What makes KiteFX Global's cTrader Platform different?"
+        subtitle="KiteFX Global has partnered with key providers to bring you a powerful and user-friendly platform designed to take your trading to the next level."
         features={[
           {
             icon: <BarChart3 size={24} />,
             title: "Extremely Low Spreads",
             description:
-              "IC Markets Global boasts some of the tightest spreads of all Forex CFD providers globally. Spreads on EUR/USD can often be seen at 0.0 pips during European and North American sessions.",
+              "KiteFX Global boasts some of the tightest spreads of all Forex CFD providers globally. Spreads on EUR/USD can often be seen at 0.0 pips during European and North American sessions.",
           },
           {
             icon: <Clock size={24} />,
             title: "Fast Order Execution",
             description:
-              "The IC Markets Global cTrader server is located in the LD5 IBX Equinix Data Centre in London, providing ultra-low latency and fast execution.",
+              "The KiteFX Global cTrader server is located in the LD5 IBX Equinix Data Centre in London, providing ultra-low latency and fast execution.",
           },
           {
             icon: <Layers size={24} />,
@@ -123,10 +123,10 @@ const CTrader = () => {
       />
       <PlatformStepsSection
         backgroundImage={assets.kitefx14}
-        title="How to open an cTrader account with IC Markets Global."
+        title="How to open an cTrader account with KiteFX Global."
         description="Before you can start trading, you will need to open a Standard or Raw Spread cTrader account. Upon successful account registration, you will find your cTrader account details listed in your Personal Area."
         steps={[
-          { step: "Step 01", text: "Open an account with IC Markets Global" },
+          { step: "Step 01", text: "Open an account with KiteFX Global" },
           {
             step: "Step 02",
             text: "Download the exe file from the Trading tools section",

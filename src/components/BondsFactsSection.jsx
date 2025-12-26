@@ -4,10 +4,8 @@ export default function BondsFactsSection() {
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto bg-white rounded-3xl p-10 lg:p-14 grid grid-cols-1 lg:grid-cols-3 gap-12 shadow-sm">
-        
         {/* LEFT CONTENT */}
         <div className="lg:col-span-2 space-y-6">
-          
           {/* Decorative Icon */}
           <div className="relative w-14 h-14 border-4 border-green-400 rounded-md flex items-center justify-center">
             <div className="w-6 h-6 border-4 border-green-400 rounded-full relative">
@@ -16,10 +14,11 @@ export default function BondsFactsSection() {
           </div>
 
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-900 leading-snug">
-            IC Markets Global Bond CFDs are based off fixed income debt securities
-            that pay investors a regular coupon in exchange for their investment.
-            We offer the bonds products as a CFD with flexible lot sizing, so you
-            can speculate on the price of the Bond by going long or short.
+            KiteFX Global Bond CFDs are based off fixed income debt securities
+            that pay investors a regular coupon in exchange for their
+            investment. We offer the bonds products as a CFD with flexible lot
+            sizing, so you can speculate on the price of the Bond by going long
+            or short.
           </h2>
 
           <p className="text-gray-600 leading-relaxed">
@@ -30,7 +29,7 @@ export default function BondsFactsSection() {
           </p>
 
           <p className="text-gray-600 leading-relaxed">
-            Bond CFDs provided by IC Markets Global are based off highly rated
+            Bond CFDs provided by KiteFX Global are based off highly rated
             government issued debt securities, including governments of the
             United States, Japan and Europe. Bonds offer traders the opportunity
             to speculate on interest rates and risk on/off sentiment, diversify
@@ -68,7 +67,6 @@ export default function BondsFactsSection() {
             Open Account
           </button>
         </div>
-
       </div>
     </section>
   );
