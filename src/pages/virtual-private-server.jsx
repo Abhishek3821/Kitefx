@@ -1,4 +1,3 @@
-
 import Banner from "../components/Banner";
 import { assets } from "../assets/assets";
 import VPSPromoSection from "../components/VPSPromoSection";
@@ -11,19 +10,17 @@ export default function VirtualPrivateServer() {
   return (
     <div>
       <Banner
-        title="Virtual Private Server"
-        description="Execute automated trading strategies 24 hours a day, 7 days a week with the fastest possible connectivity to the IC Markets Global trading servers."
+        title="Virtual Private Server "
+        description="Execute automated trading strategies 24 hours a day, 7 days a week with the fastest possible connectivity to the KiteFX  Global trading servers. "
         buttonText="Start Trading"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
       />
-     <VPSPromoSection/>
-     <ForexVPSSection/>
-     <ICVPSPlans/>
-     <VPSConnectionHero/>
-     <NeedHelpSection/>
-    
-      
+      <VPSPromoSection />
+      <ForexVPSSection />
+      <ICVPSPlans />
+      <VPSConnectionHero />
+      <NeedHelpSection />
     </div>
   );
 }
