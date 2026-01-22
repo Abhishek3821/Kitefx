@@ -193,7 +193,7 @@ export const navItems = [
       },
 
       // ================= TradingView + Tools =================
-     
+
       {
         title: "Trading Tools",
         links: [
@@ -210,7 +210,7 @@ export const navItems = [
           { label: "Trading Central", href: "/trading-central" },
         ],
       },
-       {
+      {
         title: "TradingView",
         links: [{ label: "TradingView", href: "/trading-view" }],
       },
@@ -221,7 +221,6 @@ export const navItems = [
     promo: {
       title: "Trade with a high-performance trading platform",
       ctaPrimary: "Learn More",
-      ctaSecondary: "Contact Us",
     },
     dropdown: [
       // ================= Company =================

@@ -9,14 +9,13 @@ const ContactUs = () => {
   return (
     <div>
       <Banner
-        title="We are here for you, 24/7."
+        title="We are here for you, 24/7. "
         description=""
         buttonText="Start Connecting"
         onButtonClick={() => console.log("CTA clicked")}
         backgroundImage={assets.kitefx20}
       />
       <CustomerSupport />
-      <SendMessage />
       <OfficeLocations />
     </div>
   );
