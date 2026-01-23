@@ -29,7 +29,7 @@ const SLIDES = [
 
 const Hero = () => {
   return (
-    <section className="relative h-[100vh] overflow-hidden pt-20">
+    <section className="relative h-[100vh] overflow-hidden pt-16">
       <Swiper
         modules={[Pagination, Autoplay]}
         autoplay={{ delay: 5000, disableOnInteraction: false }}

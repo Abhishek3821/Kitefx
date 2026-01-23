@@ -5,7 +5,6 @@ import { motion, AnimatePresence } from "framer-motion";
 import { assets, navItems } from "../assets/assets";
 import { NavLink } from "react-router-dom";
 import { Menu, X, Plus, Minus, ChevronDown } from "lucide-react";
-// import { kitefx26 } from "../assets/assets";
 
 /* ---------------- Dropdown Animation ---------------- */
 const dropdownVariants = {
@@ -72,16 +71,16 @@ const Navbar = () => {
         animate={{ y: showNavbar ? 0 : -100 }}
         transition={{ duration: 0.35 }}
         className="
-          fixed top-0 left-0 w-full z-50
-          bg-black
-          border-b border-white/10
+          fixed top-0 left-0 w-full z-50 h-16
+          bg-white
+          border-b border-black/10
           shadow-lg
         "
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex justify-between items-center">
           {/* Logo */}
           <NavLink to="/">
-            <img src={assets.kitefx26} className="h-13 w-13" alt="logo" />
+            <img src={assets.kitefx26} className="h-16 w-16 pt-0 m-0" alt="logo" />
           </NavLink>
 
           {/* ================= DESKTOP MENU ================= */}
@@ -95,7 +94,7 @@ const Navbar = () => {
                 }
                 onMouseLeave={closeDesktopDropdown}
               >
-                <span className="flex items-center gap-1 text-white font-medium cursor-pointer hover:text-gray-300 transition">
+                <span className="flex items-center gap-1 text-black font-medium cursor-pointer hover:text-gray-600 transition">
                   {item.label}
                   {item.dropdown && <ChevronDown size={16} />}
                 </span>
@@ -117,7 +116,7 @@ const Navbar = () => {
                         max-w-7xl
                         border border-gray-200
                         shadow-[0_30px_70px_rgba(0,0,0,0.25)]
-                        ${flipUp ? "bottom-24" : "top-20"}
+                        ${flipUp ? "bottom-24" : "top-16"}
                       `}
                     >
                       <div className="flex gap-12">
@@ -133,22 +132,11 @@ const Navbar = () => {
                           </h3>
 
                           <div className="flex gap-3">
-                            <button
-                              className="
-                              bg-[#00bafa] text-white px-6 py-3 rounded-full
-                              shadow-md hover:shadow-lg
-                              transition-all duration-300
-                            "
-                            >
+                            <button className="bg-[#00bafa] text-white px-6 py-3 rounded-full shadow-md hover:shadow-lg transition-all duration-300">
                               {activeItem?.promo?.ctaPrimary}
                             </button>
 
-                            <button
-                              className="
-                              bg-white border px-6 py-3 rounded-full
-                              hover:bg-gray-100 transition
-                            "
-                            >
+                            <button className="bg-white border px-6 py-3 rounded-full hover:bg-gray-100 transition">
                               {activeItem?.promo?.ctaSecondary}
                             </button>
                           </div>
@@ -158,12 +146,7 @@ const Navbar = () => {
                         <div className="grid grid-cols-3 gap-10 w-full">
                           {item.dropdown.map((section, sIdx) => (
                             <div key={sIdx}>
-                              <h4
-                                className="
-                                font-bold mb-4 uppercase text-xs tracking-widest
-                                text-gray-500
-                              "
-                              >
+                              <h4 className="font-bold mb-4 uppercase text-xs tracking-widest text-gray-500">
                                 {section.title}
                               </h4>
 
@@ -179,33 +162,13 @@ const Navbar = () => {
                                     <NavLink
                                       to={link.href}
                                       onClick={closeDesktopDropdown}
-                                      className="
-                                        flex items-center gap-2
-                                        text-sm font-medium text-gray-800
-                                        relative transition-all duration-300
-                                        hover:text-black
-                                      "
+                                      className="flex items-center gap-2 text-sm font-medium text-gray-800 relative transition-all duration-300 hover:text-black"
                                     >
-                                      <span
-                                        className="
-                                        opacity-0 -translate-x-2
-                                        group-hover:opacity-100 group-hover:translate-x-0
-                                        transition-all duration-300
-                                      "
-                                      >
+                                      <span className="opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300">
                                         →
                                       </span>
-
                                       {link.label}
-
-                                      <span
-                                        className="
-                                        absolute left-0 -bottom-1 h-[2px] w-0
-                                        bg-[#00bafa]
-                                        group-hover:w-full
-                                        transition-all duration-300
-                                      "
-                                      />
+                                      <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-[#00bafa] group-hover:w-full transition-all duration-300" />
                                     </NavLink>
                                   </motion.li>
                                 ))}
@@ -223,17 +186,17 @@ const Navbar = () => {
 
           {/* ================= DESKTOP CTA ================= */}
           <div className="hidden lg:flex gap-4">
-            <button className="bg-green-600 px-6 py-3 font-bold rounded-md hover:scale-105 transition">
+            <button className="bg-green-600 px-6 py-1 font-bold rounded-md hover:scale-105 transition text-white">
               Start Trading
             </button>
-            <button className="border border-green-600 text-white px-6 py-3 rounded-md hover:bg-white/10 transition">
+            <button className="border border-green-600 text-black px-6 py-1 rounded-md hover:bg-black/5 transition">
               Client Login
             </button>
           </div>
 
           {/* ================= MOBILE TOGGLE ================= */}
           <button className="lg:hidden" onClick={() => setMobileMenuOpen(true)}>
-            <Menu className="text-white" />
+            <Menu className="text-black" />
           </button>
         </div>
       </motion.nav>
@@ -259,7 +222,7 @@ const Navbar = () => {
               {navItems.map((item, idx) => (
                 <div key={idx}>
                   <button
-                    className="w-full flex justify-between text-lg font-semibold"
+                    className="w-full flex justify-between text-lg font-semibold text-black"
                     onClick={() => toggleExpandedItem(idx)}
                   >
                     {item.label}
@@ -299,10 +262,10 @@ const Navbar = () => {
               ))}
 
               <div className="pt-6 space-y-3">
-                <button className="w-full bg-green-600 py-3 rounded-md font-bold">
+                <button className="w-full bg-green-600 py-3 rounded-md font-bold text-white">
                   Start Trading
                 </button>
-                <button className="w-full border py-3 rounded-md">
+                <button className="w-full border py-3 rounded-md text-black">
                   Client Login
                 </button>
               </div>
